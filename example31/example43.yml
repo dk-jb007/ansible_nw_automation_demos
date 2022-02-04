@@ -1,0 +1,26 @@
+---
+ -
+    hosts : iosxe
+    gather_facts : false
+    tasks :
+      - name : Create Users
+        user :
+          name : "{{ item.key }}"
+          comment : "{{ item.value.full_name }}"
+        with_dict :
+          rao :
+            full_name : Vishwanath Rao
+
+
+      - name : create random directories 
+        file :
+          dest : "/home/rao/{{ item }}"
+          state : directory
+        with_random_choice :
+          - "Google"
+          - "Oracle"
+          - "Microsoft"
+          - "Amazon"
+
+    
+...

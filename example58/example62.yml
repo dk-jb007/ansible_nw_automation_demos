@@ -1,0 +1,44 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    vars : 
+      string1 : 'D:\Scripts\anSible_exampleS\iosxe1.yml'
+
+      regex : '[^A-Za-z0-9._-]'
+      replace : '_'
+      command_list : 
+        - show running_config
+        - show ip interface brief | include updated
+
+
+    tasks : 
+      - debug : 
+          var : string1 | list
+      - set_fact :
+          string2 : |-
+              {{ string1 | regex_replace('S', '##') }}
+      - debug :
+          var : string2
+
+
+      - name : read motd
+        command : cat /etc/motd
+        register : mymotd
+
+      - debug :
+         var : mymotd
+
+      - debug :
+          msg : "{{ item | map('regex_replace', regex, replace) | list | join() }} "
+        loop : "{{ command_list }}" 
+
+
+      
+
+      
+
+...

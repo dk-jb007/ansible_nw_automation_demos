@@ -1,0 +1,13 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    vars :
+      example_key : example value
+
+    tasks :
+      - name : Test Dictionary key value 
+        debug :
+          msg : result is {{ example_key }}
+
+...

@@ -1,0 +1,29 @@
+[ios]
+192.168.161.9
+ios2-rc ansible_host=192.168.161.10
+192.168.161.11
+
+
+[nxos]
+npk1-fabri
+npk2-fabri ansible_become=true ansible_become_pass=password123
+
+
+
+
+[ios:vars]
+
+ansible_ssh_pass=cisco
+ansible_user=pi
+ansible_network_os=ios
+ansible_connection= network_cli
+
+[nxos:vars]
+
+ansible_ssh_pass=cisco
+ansible_user=pi
+ansible_network_os=nxos
+
+
+[all:vars]
+# specify common variable for all groups

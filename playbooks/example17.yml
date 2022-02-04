@@ -1,0 +1,21 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+
+    
+    tasks :
+
+      - name : execute cli command 
+        ios_command :
+          commands : 
+            - command : "{{ cmd }}"
+        register : cmd_output
+
+      - name : save output to file 
+        copy :
+          content : "{{ cmd_output.stdout[0] }}"
+          dest : "output/{{ inventory_hostname }}.txt"
+
+...

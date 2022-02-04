@@ -1,0 +1,21 @@
+---
+ -
+    hosts : iosxe
+    gather_facts : false
+    tasks :
+      - name : Create Users
+        user :
+          name : "{{ item.key }}"
+          comment : "{{ item.value.full_name }}"
+          state : absent
+        with_dict :
+          rao : 
+            full_name : Vishwanath rao
+          yadav :
+            full_name : Deepak Yadav
+          tulasi : 
+            full_name : Aravind tulasi
+          sure :
+            full_name : Gowthami Sure
+...
+

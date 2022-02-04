@@ -1,0 +1,13 @@
+---
+- hosts: ss-xr
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - iosxr_cli:
+      host: '{{ ansible_host }}'
+      username: '{{ ansible_ssh_user }}'
+      password: '{{ ansible_ssh_pass }}'
+      command: '{{ cmd }}'
+    register: output
+  - debug: var=output.stdout_lines

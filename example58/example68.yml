@@ -1,0 +1,18 @@
+# Create cron job
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    tasks :
+      - name : "ensure a job that runs at specified time (morning 5 and evening 5 )"
+        cron :
+          name : Job to clean 
+          minute : "0"
+          hour : "5, 17"
+          job : "df -h >> /tmp/diskspace"
+          state : present 
+       
+          
+...

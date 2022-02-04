@@ -1,0 +1,22 @@
+---
+  -
+    hosts : iosxe
+    gather_facts : true
+    tasks :
+
+      - name : show fact variables
+        debug : 
+          var : ansible_facts
+
+          
+      - name  : Run Show version on IOSXE Devices 
+        ios_command :
+          commands : show version
+        with_items : ['ios', 'nxos', 'iosxr']
+        when : ansible_facts['net_system'] == item
+        register : version_result
+               
+      - name : Print version
+        debug :
+          var : version_result
+...

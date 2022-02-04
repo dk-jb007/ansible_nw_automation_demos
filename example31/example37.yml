@@ -1,0 +1,15 @@
+---
+ -
+    hosts : iosxe
+    gather_facts : false
+    tasks :
+      - name : Create Users
+        user :
+          name : "{{ item }}"
+          state : absent
+        with_items :
+          - user1
+          - user2
+          - user3
+...
+

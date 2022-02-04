@@ -1,0 +1,24 @@
+# find the file which contains the specific content in a directory
+
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+
+    vars : 
+      List : 
+        msg : ['CUST1', 'CUST2', 'NEW1', 'NEW2']
+      Patterns : ['CUST', 'NEW']
+
+    tasks :
+      - debug : 
+          msg : "{{ List.msg | select('match', filter) | list }}"
+        vars :
+          filter : '^{{ item }}[0-9]+'
+        loop : "{{ Patterns }}"
+    
+
+...

@@ -1,0 +1,5 @@
+---
+    - name : MyEvent
+      debug :
+        msg : "###########The Banner was changed#############"
+...

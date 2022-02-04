@@ -1,0 +1,23 @@
+{
+    "control" : {
+        "hosts" :  {
+            "localhost" : {
+                "ansible_connection" : "local"
+            }
+        }
+    },
+
+    "ios" : {
+        "hosts" : {
+            "192.168.161.9" : {
+                "ansible_user" : "pi"
+            },
+            "ios-rc1" : null,
+            "ios-rc2" : {
+                "ansible_host" : "192.168.161.10",
+                "ansible_ssh_pass" : "cisco",
+                "ansible_user" : "pi"
+            }
+        }
+    }
+}

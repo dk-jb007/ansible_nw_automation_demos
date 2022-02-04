@@ -1,0 +1,22 @@
+--== Ansible Jinja2 id statement ==--
+
+            {# If the hostname is sandbox-iosxe-latest-1.cisco.com, include a message -#}
+
+            {{ ansible_facts.net_hostname }}
+            ------------------
+            {% if  ansible_facts.net_hostname == "csr1000v-1" -%}
+                  This is IOS XE Device
+            {% endif -%}
+            ---------------------
+            {% for user in users -%}
+                {{ user | to_nice_json }}
+                {{ user | to_yaml }}
+                {{ user | to_json }}
+                {{ user | to_nice_yaml }}
+            {% endfor -%}
+            ---------------------
+            {% for myuser in users if not myuser == "bvr" -%}
+            {{loop.index}} - {{ myuser }}
+            {% endfor -%}
+
+            Code Owner : {{ program_owner }}

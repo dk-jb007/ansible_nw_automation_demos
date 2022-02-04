@@ -1,0 +1,6 @@
+*.retry
+*.zip
+
+#ignore everything in roles/ except requirments.yml
+roles/*
+!roles/requirements.yml

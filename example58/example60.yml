@@ -1,0 +1,25 @@
+# find the file which contains the specific content in a directory
+
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    vars_files :
+      - example60-data.json
+
+    tasks :
+      - debug :
+          msg : OK
+        when : '"kernel" in updated|flatten'
+
+      - debug :
+          msg : "{{ updated|flatten|select('regex', '^kernel$') | list }}"
+      
+      - debug :
+          msg : OK - Message 
+        when : updated|flatten|select('regex', '^kernel$') | list | length >0
+        
+...

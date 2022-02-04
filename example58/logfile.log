@@ -1,0 +1,1147 @@
+2022-02-04 13:26:09,034 p=253 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 13:26:09,055 p=253 u=root n=ansible | TASK [find config files] ***********************************************************************************************
+2022-02-04 13:26:10,572 p=258 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 13:26:11,844 p=253 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 13:26:11,851 p=253 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 13:26:13,066 p=253 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 13:26:13,073 p=253 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 13:26:14,272 p=253 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "yaml_list": [
+        "files/file1.yml",
+        "files/file2.yml",
+        "files/file3.yml",
+        "files/file4.yml",
+        "files/file5.yml",
+        "files/file6.yml"
+    ]
+}
+2022-02-04 13:26:14,278 p=253 u=root n=ansible | TASK [Create namespace] ************************************************************************************************
+2022-02-04 13:26:14,320 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file1.yml) 
+2022-02-04 13:26:14,322 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file2.yml) 
+2022-02-04 13:26:14,326 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file3.yml) 
+2022-02-04 13:26:14,329 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file4.yml) 
+2022-02-04 13:26:14,333 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file5.yml) 
+2022-02-04 13:26:14,341 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com] => (item=files/file6.yml) 
+2022-02-04 13:26:14,342 p=253 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 13:26:14,355 p=253 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 13:26:14,357 p=253 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-02-04 13:26:14,455 p=264 u=root n=ansible | shutdown complete
+2022-02-04 13:43:52,247 p=301 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 13:43:52,266 p=301 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 13:43:53,798 p=306 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 13:43:53,811 p=301 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=CUST) => {
+    "msg": [
+        "CUST1",
+        "CUST2"
+    ]
+}
+2022-02-04 13:43:54,829 p=301 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=NEW) => {
+    "msg": [
+        "NEW1",
+        "NEW2"
+    ]
+}
+2022-02-04 13:43:54,843 p=301 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 13:43:54,844 p=301 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 13:44:24,790 p=312 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 13:44:24,895 p=312 u=root n=ansible | shutdown complete
+2022-02-04 13:54:43,444 p=318 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 13:54:43,467 p=318 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 13:54:43,520 p=318 u=root n=ansible | skipping: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 13:54:43,533 p=318 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 13:54:43,534 p=318 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=0    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-02-04 13:57:09,733 p=326 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 13:57:09,754 p=326 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 13:57:11,305 p=331 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 13:57:11,318 p=326 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "OK"
+}
+2022-02-04 13:57:11,327 p=326 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 13:57:12,561 p=326 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": [
+        "kernel"
+    ]
+}
+2022-02-04 13:57:12,574 p=326 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 13:57:12,578 p=326 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 13:57:42,518 p=337 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 13:57:42,621 p=337 u=root n=ansible | shutdown complete
+2022-02-04 14:00:28,024 p=345 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:00:28,048 p=345 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:00:29,777 p=350 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:00:29,791 p=345 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "OK"
+}
+2022-02-04 14:00:29,798 p=345 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:00:31,307 p=345 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": [
+        "kernel"
+    ]
+}
+2022-02-04 14:00:31,318 p=345 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:00:32,804 p=345 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: NoneType: None
+2022-02-04 14:00:32,805 p=345 u=root n=ansible | fatal: [sandbox-iosxe-latest-1.cisco.com]: FAILED! => {"msg": "Invalid options for debug: when"}
+2022-02-04 14:00:32,808 p=345 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:00:32,808 p=345 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:01:02,750 p=356 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:01:02,854 p=356 u=root n=ansible | shutdown complete
+2022-02-04 14:01:10,028 p=369 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:01:10,055 p=369 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:01:11,819 p=374 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:01:11,830 p=369 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "OK"
+}
+2022-02-04 14:01:11,837 p=369 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:01:13,246 p=369 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": [
+        "kernel"
+    ]
+}
+2022-02-04 14:01:13,257 p=369 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:01:14,624 p=369 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "OK - Message"
+}
+2022-02-04 14:01:14,644 p=369 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:01:14,645 p=369 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:01:44,572 p=380 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:01:44,675 p=380 u=root n=ansible | shutdown complete
+2022-02-04 14:10:12,840 p=393 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:10:12,861 p=393 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:10:14,387 p=398 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:10:14,410 p=393 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "landscape_list": [
+        "cmdb:app1 lanscape",
+        "cmdb:app2 (ex app3) landscape",
+        "cmdb:app4 landscape"
+    ]
+}
+2022-02-04 14:10:14,422 p=393 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:10:14,425 p=393 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:10:44,341 p=404 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:10:44,446 p=404 u=root n=ansible | shutdown complete
+2022-02-04 14:12:45,874 p=407 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:12:45,893 p=407 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:12:47,416 p=412 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:12:47,431 p=407 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "landscape_list": [
+        "cmdb:app1 lanscape",
+        "cmdb:app2 (ex app3) landscape",
+        "cmdb:app4 landscape"
+    ]
+}
+2022-02-04 14:12:47,438 p=407 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:12:48,643 p=407 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:12:48,649 p=407 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:12:49,879 p=407 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": [
+        "cmdb:app2 (ex app3) landscape"
+    ]
+}
+2022-02-04 14:12:49,891 p=407 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:12:49,892 p=407 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:13:19,836 p=418 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:13:19,942 p=418 u=root n=ansible | shutdown complete
+2022-02-04 14:18:08,683 p=431 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:18:08,704 p=431 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:18:10,232 p=436 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:18:10,281 p=431 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:18:10,294 p=431 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:18:10,296 p=431 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:18:40,185 p=442 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:18:40,290 p=442 u=root n=ansible | shutdown complete
+2022-02-04 14:20:03,433 p=445 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:20:03,456 p=445 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:20:04,982 p=450 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:20:05,038 p=445 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:20:05,050 p=445 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:20:06,286 p=445 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:20:06,292 p=445 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:20:07,518 p=445 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\Scripts\\ansible_examples\\iosxe1.yml"
+}
+2022-02-04 14:20:07,533 p=445 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:20:07,534 p=445 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:20:32,999 p=469 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:20:33,020 p=469 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:20:34,549 p=474 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:20:34,609 p=469 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:20:34,617 p=469 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:20:35,849 p=469 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:20:35,857 p=469 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:20:37,117 p=469 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2 | list": [
+        "D",
+        ":",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:20:37,130 p=469 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:20:37,132 p=469 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:20:37,477 p=456 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:20:37,582 p=456 u=root n=ansible | shutdown complete
+2022-02-04 14:21:07,026 p=480 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:21:07,129 p=480 u=root n=ansible | shutdown complete
+2022-02-04 14:22:07,780 p=493 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:22:07,801 p=493 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:22:09,345 p=498 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:22:09,410 p=493 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:22:09,417 p=493 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:22:10,644 p=493 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:22:10,651 p=493 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:22:11,866 p=493 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\\\\\\\Scripts\\\\\\\\ansible_examples\\\\\\\\iosxe1.yml"
+}
+2022-02-04 14:22:11,878 p=493 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:22:11,879 p=493 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:22:41,824 p=504 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:22:41,927 p=504 u=root n=ansible | shutdown complete
+2022-02-04 14:23:25,404 p=517 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:23:25,424 p=517 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:23:26,938 p=522 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:23:26,990 p=517 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "s",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "s",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:23:26,998 p=517 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:23:28,244 p=517 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:23:28,251 p=517 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:23:29,467 p=517 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\\\##cripts\\\\ansible_examples\\\\iosxe1.yml"
+}
+2022-02-04 14:23:29,479 p=517 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:23:29,482 p=517 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:23:59,422 p=528 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:23:59,524 p=528 u=root n=ansible | shutdown complete
+2022-02-04 14:24:10,152 p=541 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:24:10,173 p=541 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:24:11,707 p=546 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:24:11,765 p=541 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "\\",
+        "a",
+        "n",
+        "S",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "S",
+        "\\",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:24:11,772 p=541 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:24:13,003 p=541 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:24:13,011 p=541 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:24:14,240 p=541 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\\\##cripts\\\\an##ible_example##\\\\iosxe1.yml"
+}
+2022-02-04 14:24:14,252 p=541 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:24:14,253 p=541 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:24:44,197 p=552 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:24:44,300 p=552 u=root n=ansible | shutdown complete
+2022-02-04 14:26:47,630 p=565 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:26:47,650 p=565 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:26:49,179 p=570 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:26:49,226 p=565 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "a",
+        "n",
+        "S",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "S",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:26:49,235 p=565 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:26:50,461 p=565 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:26:50,468 p=565 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:26:51,701 p=565 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\##cripts\\an##ible_example##\\iosxe1.yml"
+}
+2022-02-04 14:26:51,715 p=565 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:26:51,716 p=565 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:27:21,658 p=576 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 14:27:21,762 p=576 u=root n=ansible | shutdown complete
+2022-02-04 14:35:11,223 p=589 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:35:11,244 p=589 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:35:12,759 p=594 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:35:12,819 p=589 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "a",
+        "n",
+        "S",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "S",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:35:12,827 p=589 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:35:14,060 p=589 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:35:14,067 p=589 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:35:15,282 p=589 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\##cripts\\an##ible_example##\\iosxe1.yml"
+}
+2022-02-04 14:35:15,289 p=589 u=root n=ansible | TASK [read motd] *******************************************************************************************************
+2022-02-04 14:35:17,914 p=589 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:35:17,920 p=589 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:35:19,164 p=589 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "mymotd": {
+        "changed": true,
+        "cmd": [
+            "cat",
+            "/etc/motd"
+        ],
+        "delta": "0:00:00.140478",
+        "end": "2022-02-04 14:35:17.735162",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2022-02-04 14:35:17.594684",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "--== Ansible Jinja2 id statement ==--\n\n            csr1000v-1\n            ------------------\n            This is IOS XE Device\n            ---------------------\n            \"user1\"\n                user1\n\n                \"user1\"\n                user1\n\n            \"user2\"\n                user2\n\n                \"user2\"\n                user2\n\n            \"user3\"\n                user3\n\n                \"user3\"\n                user3\n\n            \"user4\"\n                user4\n\n                \"user4\"\n                user4\n\n            ---------------------\n            1 - user1\n            2 - user2\n            3 - user3\n            4 - user4\n            Code Owner : Dr.Rao",
+        "stdout_lines": [
+            "--== Ansible Jinja2 id statement ==--",
+            "",
+            "            csr1000v-1",
+            "            ------------------",
+            "            This is IOS XE Device",
+            "            ---------------------",
+            "            \"user1\"",
+            "                user1",
+            "",
+            "                \"user1\"",
+            "                user1",
+            "",
+            "            \"user2\"",
+            "                user2",
+            "",
+            "                \"user2\"",
+            "                user2",
+            "",
+            "            \"user3\"",
+            "                user3",
+            "",
+            "                \"user3\"",
+            "                user3",
+            "",
+            "            \"user4\"",
+            "                user4",
+            "",
+            "                \"user4\"",
+            "                user4",
+            "",
+            "            ---------------------",
+            "            1 - user1",
+            "            2 - user2",
+            "            3 - user3",
+            "            4 - user4",
+            "            Code Owner : Dr.Rao"
+        ]
+    }
+}
+2022-02-04 14:35:19,178 p=589 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:35:19,179 p=589 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:35:19,277 p=600 u=root n=ansible | shutdown complete
+2022-02-04 14:42:37,706 p=646 u=root n=ansible | ERROR! conflicting action statements: debug, msg
+
+The error appears to be in '/ansible-examples/example58/example62.yml': line 35, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+      - debug :
+        ^ here
+
+2022-02-04 14:43:06,166 p=650 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 14:43:06,187 p=650 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:43:07,700 p=655 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 14:43:07,756 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string1 | list": [
+        "D",
+        ":",
+        "\\",
+        "S",
+        "c",
+        "r",
+        "i",
+        "p",
+        "t",
+        "s",
+        "\\",
+        "a",
+        "n",
+        "S",
+        "i",
+        "b",
+        "l",
+        "e",
+        "_",
+        "e",
+        "x",
+        "a",
+        "m",
+        "p",
+        "l",
+        "e",
+        "S",
+        "\\",
+        "i",
+        "o",
+        "s",
+        "x",
+        "e",
+        "1",
+        ".",
+        "y",
+        "m",
+        "l"
+    ]
+}
+2022-02-04 14:43:07,764 p=650 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 14:43:08,988 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:43:08,995 p=650 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:43:10,191 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "string2": "D:\\##cripts\\an##ible_example##\\iosxe1.yml"
+}
+2022-02-04 14:43:10,198 p=650 u=root n=ansible | TASK [read motd] *******************************************************************************************************
+2022-02-04 14:43:12,813 p=650 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 14:43:12,820 p=650 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:43:14,049 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "mymotd": {
+        "changed": true,
+        "cmd": [
+            "cat",
+            "/etc/motd"
+        ],
+        "delta": "0:00:00.134309",
+        "end": "2022-02-04 14:43:12.633827",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2022-02-04 14:43:12.499518",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "--== Ansible Jinja2 id statement ==--\n\n            csr1000v-1\n            ------------------\n            This is IOS XE Device\n            ---------------------\n            \"user1\"\n                user1\n\n                \"user1\"\n                user1\n\n            \"user2\"\n                user2\n\n                \"user2\"\n                user2\n\n            \"user3\"\n                user3\n\n                \"user3\"\n                user3\n\n            \"user4\"\n                user4\n\n                \"user4\"\n                user4\n\n            ---------------------\n            1 - user1\n            2 - user2\n            3 - user3\n            4 - user4\n            Code Owner : Dr.Rao",
+        "stdout_lines": [
+            "--== Ansible Jinja2 id statement ==--",
+            "",
+            "            csr1000v-1",
+            "            ------------------",
+            "            This is IOS XE Device",
+            "            ---------------------",
+            "            \"user1\"",
+            "                user1",
+            "",
+            "                \"user1\"",
+            "                user1",
+            "",
+            "            \"user2\"",
+            "                user2",
+            "",
+            "                \"user2\"",
+            "                user2",
+            "",
+            "            \"user3\"",
+            "                user3",
+            "",
+            "                \"user3\"",
+            "                user3",
+            "",
+            "            \"user4\"",
+            "                user4",
+            "",
+            "                \"user4\"",
+            "                user4",
+            "",
+            "            ---------------------",
+            "            1 - user1",
+            "            2 - user2",
+            "            3 - user3",
+            "            4 - user4",
+            "            Code Owner : Dr.Rao"
+        ]
+    }
+}
+2022-02-04 14:43:14,055 p=650 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 14:43:15,276 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=show running_config) => {
+    "msg": "show_running_config "
+}
+2022-02-04 14:43:15,279 p=650 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=show ip interface brief | include updated) => {
+    "msg": "show_ip_interface_brief___include_updated "
+}
+2022-02-04 14:43:15,295 p=650 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 14:43:15,296 p=650 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 14:43:15,393 p=661 u=root n=ansible | shutdown complete
+2022-02-04 15:00:59,481 p=712 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:00:59,503 p=712 u=root n=ansible | TASK [tempfile] ********************************************************************************************************
+2022-02-04 15:01:01,060 p=717 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:01:02,349 p=712 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:01:02,357 p=712 u=root n=ansible | TASK [template] ********************************************************************************************************
+2022-02-04 15:01:06,302 p=712 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:01:06,310 p=712 u=root n=ansible | TASK [include_vars] ****************************************************************************************************
+2022-02-04 15:01:07,526 p=712 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:01:07,533 p=712 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:01:08,755 p=712 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "minfo": {
+        "current-firmware": "6.42.3",
+        "factory-firmware": 3.0,
+        "firmware-type": "ar7240",
+        "model": "751G-2HnD",
+        "routerboard": true,
+        "serial-number": "3A6502B2A2E7",
+        "upgrade-firmware": "6.43.4"
+    }
+}
+2022-02-04 15:01:08,762 p=712 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:01:09,989 p=712 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "minfo['upgrade-firmware']": "6.43.4"
+}
+2022-02-04 15:01:10,004 p=712 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:01:10,007 p=712 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:01:10,101 p=723 u=root n=ansible | shutdown complete
+2022-02-04 15:29:49,614 p=805 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:29:49,635 p=805 u=root n=ansible | TASK [read from CSV] ***************************************************************************************************
+2022-02-04 15:29:51,216 p=810 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:29:52,618 p=805 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:29:52,625 p=805 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:29:53,893 p=805 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "users": {
+        "changed": false,
+        "dict": {},
+        "failed": false,
+        "list": [
+            {
+                "null": [
+                    "name",
+                    "uid",
+                    "gid",
+                    "password"
+                ]
+            },
+            {
+                "null": [
+                    "eg1",
+                    "1",
+                    "2",
+                    "password"
+                ]
+            },
+            {
+                "null": [
+                    "eg2",
+                    "1",
+                    "2",
+                    "password"
+                ]
+            }
+        ]
+    }
+}
+2022-02-04 15:29:53,901 p=805 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:29:55,351 p=805 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": []
+}
+2022-02-04 15:29:55,365 p=805 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:29:55,366 p=805 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:29:55,465 p=816 u=root n=ansible | shutdown complete
+2022-02-04 15:31:27,815 p=851 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:31:27,833 p=851 u=root n=ansible | TASK [read from CSV] ***************************************************************************************************
+2022-02-04 15:31:29,367 p=856 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:31:30,675 p=851 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:31:30,687 p=851 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:31:32,006 p=851 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "users": {
+        "changed": false,
+        "dict": {},
+        "failed": false,
+        "list": [
+            {
+                "null": [
+                    "name",
+                    "uid",
+                    "gid",
+                    "password"
+                ]
+            },
+            {
+                "null": [
+                    "eg1",
+                    "1",
+                    "2",
+                    "password"
+                ]
+            },
+            {
+                "null": [
+                    "eg2",
+                    "1",
+                    "2",
+                    "password"
+                ]
+            }
+        ]
+    }
+}
+2022-02-04 15:31:32,016 p=851 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:31:33,313 p=851 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": []
+}
+2022-02-04 15:31:33,325 p=851 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:31:33,328 p=851 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:31:33,424 p=862 u=root n=ansible | shutdown complete
+2022-02-04 15:33:04,720 p=897 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:33:04,739 p=897 u=root n=ansible | TASK [read from CSV] ***************************************************************************************************
+2022-02-04 15:33:06,258 p=902 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:33:07,570 p=897 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:33:07,576 p=897 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:33:08,809 p=897 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "users": {
+        "changed": false,
+        "dict": {},
+        "failed": false,
+        "list": [
+            {
+                "gid": "2",
+                "name": "eg1",
+                "password": "password",
+                "uid": "1"
+            },
+            {
+                "gid": "2",
+                "name": "eg2",
+                "password": "password",
+                "uid": "1"
+            }
+        ]
+    }
+}
+2022-02-04 15:33:08,817 p=897 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:33:10,071 p=897 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": [
+        "eg1",
+        "eg2"
+    ]
+}
+2022-02-04 15:33:10,086 p=897 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:33:10,089 p=897 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:33:10,185 p=908 u=root n=ansible | shutdown complete
+2022-02-04 15:41:10,578 p=943 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:41:10,598 p=943 u=root n=ansible | TASK [read from CSV] ***************************************************************************************************
+2022-02-04 15:41:12,148 p=948 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:41:13,474 p=943 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:41:13,481 p=943 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:41:14,718 p=943 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "dms.dict": {
+        "hostname1": {
+            "hostname": "hostname1",
+            "ip": "10.1.0.21",
+            "partition": "/dev/sda1"
+        },
+        "hostname2": {
+            "hostname": "hostname2",
+            "ip": "10.1.0.22",
+            "partition": "/dev/sda1"
+        },
+        "hostname3": {
+            "hostname": "hostname3",
+            "ip": "10.1.0.23",
+            "partition": "/dev/sda1"
+        }
+    }
+}
+2022-02-04 15:41:14,733 p=943 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:41:14,736 p=943 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:41:14,832 p=954 u=root n=ansible | shutdown complete
+2022-02-04 15:44:13,987 p=984 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:44:14,008 p=984 u=root n=ansible | TASK [read from CSV] ***************************************************************************************************
+2022-02-04 15:44:15,566 p=989 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:44:16,880 p=984 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:44:16,887 p=984 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:44:18,123 p=984 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "dms.dict": {
+        "hostname1": {
+            "hostname": "hostname1",
+            "ip": "10.1.0.21",
+            "partition": "/dev/sda1"
+        },
+        "hostname2": {
+            "hostname": "hostname2",
+            "ip": "10.1.0.22",
+            "partition": "/dev/sda1"
+        },
+        "hostname3": {
+            "hostname": "hostname3",
+            "ip": "10.1.0.23",
+            "partition": "/dev/sda1"
+        }
+    }
+}
+2022-02-04 15:44:18,131 p=984 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:44:19,382 p=984 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item={'key': 'hostname1', 'value': {'hostname': 'hostname1', 'partition': '/dev/sda1', 'ip': '10.1.0.21'}}) => {
+    "msg": "hostname1 : hostname1, /dev/sda1, 10.1.0.21"
+}
+2022-02-04 15:44:19,385 p=984 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item={'key': 'hostname2', 'value': {'hostname': 'hostname2', 'partition': '/dev/sda1', 'ip': '10.1.0.22'}}) => {
+    "msg": "hostname2 : hostname2, /dev/sda1, 10.1.0.22"
+}
+2022-02-04 15:44:19,391 p=984 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item={'key': 'hostname3', 'value': {'hostname': 'hostname3', 'partition': '/dev/sda1', 'ip': '10.1.0.23'}}) => {
+    "msg": "hostname3 : hostname3, /dev/sda1, 10.1.0.23"
+}
+2022-02-04 15:44:19,408 p=984 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:44:19,411 p=984 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:44:19,508 p=995 u=root n=ansible | shutdown complete
+2022-02-04 15:53:46,267 p=1030 u=root n=ansible | ERROR! couldn't resolve module/action 'set_facts'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/ansible-examples/example58/example66.yml': line 15, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    tasks :
+      - set_facts :
+        ^ here
+
+2022-02-04 15:53:55,405 p=1034 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:53:55,426 p=1034 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 15:53:56,966 p=1039 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:53:56,974 p=1034 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:53:56,981 p=1034 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:53:58,235 p=1034 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "keys": [
+        "first",
+        "second"
+    ]
+}
+2022-02-04 15:53:58,249 p=1034 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:53:58,250 p=1034 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:54:28,190 p=1045 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 15:54:28,294 p=1045 u=root n=ansible | shutdown complete
+2022-02-04 15:58:23,199 p=1053 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 15:58:23,222 p=1053 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 15:58:24,761 p=1058 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 15:58:24,770 p=1053 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 15:58:24,777 p=1053 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:58:26,017 p=1053 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "keys": [
+        "first",
+        "second"
+    ]
+}
+2022-02-04 15:58:26,024 p=1053 u=root n=ansible | TASK [set_fact] ********************************************************************************************************
+2022-02-04 15:58:27,265 p=1053 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=90909090   12121212)
+2022-02-04 15:58:27,267 p=1053 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => (item=23232323   45454545)
+2022-02-04 15:58:27,276 p=1053 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 15:58:28,507 p=1053 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "sql_list": [
+        {
+            "first": "90909090",
+            "second": "12121212"
+        },
+        {
+            "first": "23232323",
+            "second": "45454545"
+        }
+    ]
+}
+2022-02-04 15:58:28,519 p=1053 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 15:58:28,522 p=1053 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 15:58:58,458 p=1064 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-04 15:58:58,563 p=1064 u=root n=ansible | shutdown complete
+2022-02-04 16:09:44,638 p=1082 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-04 16:09:44,660 p=1082 u=root n=ansible | TASK [schedule a command to run in 20 mins] ****************************************************************************
+2022-02-04 16:09:46,196 p=1087 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 16:09:47,667 p=1082 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 16:09:47,682 p=1082 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 16:09:47,684 p=1082 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 16:09:47,782 p=1093 u=root n=ansible | shutdown complete
+2022-02-04 16:35:12,869 p=1119 u=root n=ansible | PLAY [iosxe] ***********************************************************************************************************
+2022-02-04 16:35:12,890 p=1119 u=root n=ansible | TASK [command] *********************************************************************************************************
+2022-02-04 16:35:14,468 p=1124 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 16:35:14,475 p=1125 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-04 16:35:16,959 p=1119 u=root n=ansible | changed: [sandbox-iosxe-recomm-1.cisco.com]
+2022-02-04 16:35:16,959 p=1119 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 16:35:16,966 p=1119 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 16:35:18,263 p=1119 u=root n=ansible | ok: [sandbox-iosxe-recomm-1.cisco.com] => {
+    "msg": "sandbox-iosxe-recomm-1.cisco.com task1 2022-02-04 16:35:15.635296 - 2022-02-04 16:35:16.771440 "
+}
+2022-02-04 16:35:18,265 p=1119 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "sandbox-iosxe-latest-1.cisco.com task1 2022-02-04 16:35:15.612981 - 2022-02-04 16:35:16.760463 "
+}
+2022-02-04 16:35:18,271 p=1119 u=root n=ansible | TASK [command] *********************************************************************************************************
+2022-02-04 16:35:21,757 p=1119 u=root n=ansible | changed: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-04 16:35:25,204 p=1119 u=root n=ansible | changed: [sandbox-iosxe-recomm-1.cisco.com]
+2022-02-04 16:35:25,211 p=1119 u=root n=ansible | TASK [debug] ***********************************************************************************************************
+2022-02-04 16:35:26,480 p=1119 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "sandbox-iosxe-latest-1.cisco.com task2 2022-02-04 16:35:20.424556 - 2022-02-04 16:35:21.559686 "
+}
+2022-02-04 16:35:26,482 p=1119 u=root n=ansible | ok: [sandbox-iosxe-recomm-1.cisco.com] => {
+    "msg": "sandbox-iosxe-recomm-1.cisco.com task2 2022-02-04 16:35:23.890261 - 2022-02-04 16:35:25.026441 "
+}
+2022-02-04 16:35:26,495 p=1119 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-04 16:35:26,498 p=1119 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 16:35:26,500 p=1119 u=root n=ansible | sandbox-iosxe-recomm-1.cisco.com : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-04 16:35:26,597 p=1136 u=root n=ansible | shutdown complete
+2022-02-04 16:35:26,598 p=1137 u=root n=ansible | shutdown complete

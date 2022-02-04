@@ -1,0 +1,1318 @@
+2022-02-03 17:51:34,942 p=11755 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-03 17:51:34,955 p=11755 u=root n=ansible | TASK [Gathering Facts] *************************************************************************************************
+2022-02-03 17:51:36,385 p=11760 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-03 17:51:36,389 p=11760 u=root n=ansible | [WARNING]: Ignoring timeout(10) for cisco.ios.ios_facts
+
+2022-02-03 17:51:38,609 p=11766 u=root n=p=11766 u=root | paramiko [sandbox-iosxe-latest-1.cisco.com] | Connected (version 2.0, client Cisco-1.25)
+2022-02-03 17:51:40,318 p=11766 u=root n=p=11766 u=root | paramiko [sandbox-iosxe-latest-1.cisco.com] | Authentication (password) successful!
+2022-02-03 17:51:48,209 p=11755 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-03 17:51:48,221 p=11755 u=root n=ansible | TASK [Ansible Jinja2 template example] *********************************************************************************
+2022-02-03 17:51:49,337 p=11755 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "--== Ansible Jinja2 id statement ==--\ncsr1000v-1 ------------------ This is IOS XE Device\n--------------------- user1\nuser2\nuser3\nuser4\n--------------------- 1 - user1 2 - user2 3 - user3 4 - user4 \n"
+}
+2022-02-03 17:51:49,351 p=11755 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-03 17:51:49,352 p=11755 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-03 17:52:19,298 p=11766 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-03 17:52:19,402 p=11766 u=root n=ansible | shutdown complete
+2022-02-03 17:53:23,041 p=11798 u=root n=ansible | PLAY [sandbox-iosxe-latest-1.cisco.com] ********************************************************************************
+2022-02-03 17:53:23,054 p=11798 u=root n=ansible | TASK [Gathering Facts] *************************************************************************************************
+2022-02-03 17:53:24,470 p=11803 u=root n=ansible | network_os is set to cisco.ios.ios
+2022-02-03 17:53:24,473 p=11803 u=root n=ansible | [WARNING]: Ignoring timeout(10) for cisco.ios.ios_facts
+
+2022-02-03 17:53:26,686 p=11809 u=root n=p=11809 u=root | paramiko [sandbox-iosxe-latest-1.cisco.com] | Connected (version 2.0, client Cisco-1.25)
+2022-02-03 17:53:28,368 p=11809 u=root n=p=11809 u=root | paramiko [sandbox-iosxe-latest-1.cisco.com] | Authentication (password) successful!
+2022-02-03 17:53:36,213 p=11798 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com]
+2022-02-03 17:53:36,224 p=11798 u=root n=ansible | TASK [Ansible Jinja2 template example] *********************************************************************************
+2022-02-03 17:53:37,349 p=11798 u=root n=ansible | ok: [sandbox-iosxe-latest-1.cisco.com] => {
+    "msg": "--== Ansible Jinja2 id statement ==--\ncsr1000v-1 ------------------ This is IOS XE Device\n--------------------- user1\nuser2\nuser3\nuser4\n--------------------- 1 - user1 2 - user2 3 - user3 4 - user4 \n"
+}
+2022-02-03 17:53:37,363 p=11798 u=root n=ansible | PLAY RECAP *************************************************************************************************************
+2022-02-03 17:53:37,366 p=11798 u=root n=ansible | sandbox-iosxe-latest-1.cisco.com : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-02-03 17:54:07,310 p=11809 u=root n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2022-02-03 17:54:07,414 p=11809 u=root n=ansible | shutdown complete
+2022-02-03 17:58:08,418 p=11847 u=root n=ansible | [WARNING]: Collection frr.frr does not support Ansible version 2.12.1
+
+2022-02-03 17:58:08,469 p=11847 u=root n=ansible | [WARNING]: Collection ibm.qradar does not support Ansible version 2.12.1
+
+2022-02-03 17:58:08,717 p=11847 u=root n=ansible | [WARNING]: Collection splunk.es does not support Ansible version 2.12.1
+
+2022-02-03 17:58:08,769 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.aws_az_facts has been deprecated. aws_az_facts was renamed in Ansible 2.9 to 
+aws_az_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,772 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.aws_caller_facts has been deprecated. aws_caller_facts was renamed in Ansible 2.9 to 
+aws_caller_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,775 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.cloudformation_facts has been deprecated. cloudformation_facts has been deprecated 
+and will be removed. The cloudformation_info module returns the same information, but not as ansible_facts.  See the 
+module documentation for more information. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,777 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2 has been deprecated. The ec2 module is based upon a deprecated version of the AWS
+ SDKs and is deprecated in favor of the ec2_instance module. Please update your tasks. This feature will be removed 
+from amazon.aws in version 4.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:08,778 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_ami_facts has been deprecated. ec2_ami_facts was renamed in Ansible 2.9 to 
+ec2_ami_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,779 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_eni_facts has been deprecated. ec2_eni_facts was renamed in Ansible 2.9 to 
+ec2_eni_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,780 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_group_facts has been deprecated. ec2_group_facts was renamed in Ansible 2.9 to 
+ec2_group_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,782 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_snapshot_facts has been deprecated. ec2_snapshot_facts was renamed in Ansible 2.9
+ to ec2_snapshot_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,783 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vol_facts has been deprecated. ec2_vol_facts was renamed in Ansible 2.9 to 
+ec2_vol_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,784 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_dhcp_option_facts has been deprecated. ec2_vpc_dhcp_option_facts was renamed 
+in Ansible 2.9 to ec2_vpc_dhcp_option_info.  Please update your tasks. This feature will be removed from amazon.aws in 
+a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,785 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_endpoint_facts has been deprecated. ec2_vpc_endpoint_facts was renamed in 
+Ansible 2.9 to ec2_vpc_endpoint_info. This feature will be removed from amazon.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,786 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_igw_facts has been deprecated. ec2_vpc_igw_facts was renamed in Ansible 2.9 
+to ec2_vpc_igw_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,787 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_nat_gateway_facts has been deprecated. ec2_vpc_nat_gateway_facts was renamed 
+in Ansible 2.9 to ec2_vpc_nat_gateway_info. Please update your tasks. This feature will be removed from amazon.aws in a
+ release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,788 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_net_facts has been deprecated. ec2_vpc_net_facts was renamed in Ansible 2.9 
+to ec2_vpc_net_info. Please update your tasks. This feature will be removed from amazon.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,790 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_route_table_facts has been deprecated. ec2_vpc_route_table_facts was renamed 
+in Ansible 2.9 to ec2_vpc_route_table_info. Please update your tasks. This feature will be removed from amazon.aws in a
+ release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,791 p=11847 u=root n=ansible | [DEPRECATION WARNING]: amazon.aws.ec2_vpc_subnet_facts has been deprecated. ec2_vpc_subnet_facts was renamed in Ansible
+ 2.9 to ec2_vpc_subnet_info.  Please update your tasks. This feature will be removed from amazon.aws in a release after
+ 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,796 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_banner has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,797 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,798 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_l2_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,799 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_l3_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,800 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_linkagg has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,801 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_lldp has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,802 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_lldp_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,803 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_logging has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,805 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_static_route has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,807 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_system has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,808 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_user has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,811 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_vlan has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,812 p=11847 u=root n=ansible | [DEPRECATION WARNING]: ansible.netcommon.net_vrf has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from ansible.netcommon in a release after 2022-06-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,820 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_bgp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from arista.eos in a release after 2023-01-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,822 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,824 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_l2_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,829 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_l3_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,834 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_linkagg has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,836 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_logging has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from arista.eos in a release after 2024-01-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,840 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_static_route has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,847 p=11847 u=root n=ansible | [DEPRECATION WARNING]: arista.eos.eos_vlan has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from arista.eos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,893 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.asa.asa_acl has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.asa in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,894 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.asa.asa_og has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.asa in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,897 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_bgp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.ios in a release after 2023-08-24. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,898 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_interface has been deprecated. See the plugin documentation for more details. This
+ feature will be removed from cisco.ios in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,899 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_l2_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.ios in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,901 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_l3_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.ios in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,907 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_logging has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.ios in a release after 2023-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,908 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_ntp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.ios in a release after 2024-01-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,909 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_static_route has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.ios in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,910 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.ios.ios_vlan has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.ios in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,912 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.iosxr.iosxr_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.iosxr in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,913 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.iosxr.iosxr_logging has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.iosxr in a release after 2023-08-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,947 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_acl has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,948 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_acl_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,949 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_bgp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2023-01-27. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,950 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_bgp_af has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2023-02-24. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,951 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_bgp_neighbor has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from cisco.nxos in a release after 2023-01-27. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,952 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_bgp_neighbor_af has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from cisco.nxos in a release after 2023-02-24. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,953 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,954 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_interface_ospf has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from cisco.nxos in a release after 2022-10-26. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,956 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_l2_interface has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,957 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_l3_interface has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,958 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_linkagg has been deprecated. See the plugin documentation for more details. This
+ feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,959 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_lldp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,960 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_logging has been deprecated. See the plugin documentation for more details. This
+ feature will be removed from cisco.nxos in a release after 2023-08-01. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,960 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_ntp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,961 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_ntp_auth has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,962 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_ntp_options has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,963 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_ospf has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,964 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_ospf_vrf has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2022-10-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,965 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_smu has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-10-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,969 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_community has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,970 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_contact has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,972 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_host has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,974 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_location has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,976 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_traps has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,977 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_snmp_user has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from cisco.nxos in a release after 2024-01-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,978 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_static_route has been deprecated. See the plugin documentation for more details.
+ This feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,979 p=11847 u=root n=ansible | [DEPRECATION WARNING]: cisco.nxos.nxos_vlan has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,986 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_acm_facts has been deprecated. aws_acm_facts was renamed in Ansible 2.9 to 
+aws_acm_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,990 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_kms_facts has been deprecated. aws_kms_facts was renamed in Ansible 2.9 to 
+aws_kms_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,992 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_region_facts has been deprecated. aws_region_facts was renamed in Ansible 2.9 
+to aws_region_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,993 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_s3_bucket_facts has been deprecated. aws_s3_bucket_facts has been deprecated 
+and will be removed. The aws_s3_bucket_info module returns the same information, but not as ansible_facts.  See the 
+module documentation for more information. Please update your tasks. This feature will be removed from community.aws in
+ a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,995 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_sgw_facts has been deprecated. aws_sgw_facts was renamed in Ansible 2.9 to 
+aws_sgw_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:08,999 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.aws_waf_facts has been deprecated. aws_waf_facts was renamed in Ansible 2.9 to 
+aws_waf_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,002 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.cloudfront_facts has been deprecated. cloudfront_facts has been deprecated and 
+will be removed. The cloudfront_info module returns the same information, but not as ansible_facts.  See the module 
+documentation for more information. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,003 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.cloudwatchlogs_log_group_facts has been deprecated. cloudwatchlogs_log_group_facts
+ was renamed in Ansible 2.9 to cloudwatchlogs_log_group_info. Please update your tasks. This feature will be removed 
+from community.aws in a release after 2021-12-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,005 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_asg_facts has been deprecated. ec2_asg_facts was renamed in Ansible 2.9 to 
+ec2_asg_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,008 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_customer_gateway_facts has been deprecated. ec2_customer_gateway_facts was 
+renamed in Ansible 2.9 to ec2_customer_gateway_info. Please update your tasks. This feature will be removed from 
+community.aws in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False
+ in ansible.cfg.
+2022-02-03 17:58:09,009 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_eip_facts has been deprecated. ec2_eip_facts was renamed in Ansible 2.9 to 
+ec2_eip_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,010 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_elb_facts has been deprecated. The ec2_elb_info module has been deprecated and
+ replaced by the elb_classic_lb_info module. Please update your tasks. This feature will be removed from community.aws 
+in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,010 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_elb_info has been deprecated. The ec2_elb_info module has been deprecated and 
+replaced by the elb_classic_lb_info module. Please update your tasks. This feature will be removed from community.aws 
+in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,011 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_lc_facts has been deprecated. ec2_lc_facts was renamed in Ansible 2.9 to 
+ec2_lc_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,016 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_placement_group_facts has been deprecated. ec2_placement_group_facts was 
+renamed in Ansible 2.9 to ec2_placement_group_info. Please update your tasks. This feature will be removed from 
+community.aws in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False
+ in ansible.cfg.
+2022-02-03 17:58:09,018 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_vpc_nacl_facts has been deprecated. ec2_vpc_nacl_facts was renamed in Ansible 
+2.9 to ec2_vpc_nacl_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,019 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_vpc_peering_facts has been deprecated. ec2_vpc_peering_facts was renamed in 
+Ansible 2.9 to ec2_vpc_peering_info. Please update your tasks. This feature will be removed from community.aws in a 
+release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,026 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_vpc_route_table_facts has been deprecated. ec2_vpc_route_table_facts was 
+renamed in Ansible 2.9 to ec2_vpc_route_table_info. Please update your tasks. This feature will be removed from 
+community.aws in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False
+ in ansible.cfg.
+2022-02-03 17:58:09,027 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_vpc_vgw_facts has been deprecated. ec2_vpc_vgw_facts was renamed in Ansible 
+2.9 to ec2_vpc_vgw_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,031 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ec2_vpc_vpn_facts has been deprecated. ec2_vpc_vpn_facts was renamed in Ansible 
+2.9 to ec2_vpc_vpn_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,033 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ecs_service_facts has been deprecated. ecs_service_facts has been deprecated and 
+will be removed. The ecs_service_info module returns the same information, but not as ansible_facts.  See the module 
+documentation for more information. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,035 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.ecs_taskdefinition_facts has been deprecated. ecs_taskdefinition_facts was renamed
+ in Ansible 2.9 to ecs_taskdefinition_info. Please update your tasks. This feature will be removed from community.aws 
+in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,037 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.efs_facts has been deprecated. efs_facts has been deprecated and will be removed. 
+The efs_info module returns the same information, but not as ansible_facts.  See the module documentation for more 
+information. This feature will be removed from community.aws in a release after 2021-12-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,039 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.elasticache_facts has been deprecated. elasticache_facts was renamed in Ansible 
+2.9 to elasticache_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,041 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.elb_application_lb_facts has been deprecated. elb_application_lb_facts was renamed
+ in Ansible 2.9 to elb_application_lb_info. Please update your tasks. This feature will be removed from community.aws 
+in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,042 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.elb_classic_lb_facts has been deprecated. elb_classic_lb_facts was renamed in 
+Ansible 2.9 to elb_classic_lb_info. Please update your tasks. This feature will be removed from community.aws in a 
+release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,044 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.elb_target_facts has been deprecated. elb_target_facts was renamed in Ansible 2.9 
+to elb_target_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,048 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.elb_target_group_facts has been deprecated. elb_target_group_facts was renamed in 
+Ansible 2.9 to elb_target_group_info. Please update your tasks. This feature will be removed from community.aws in a 
+release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,050 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.iam has been deprecated. The iam module is based upon a deprecated version of the 
+AWS SDKs and is deprecated in favor of the iam_user, iam_group and iam_role modules. Please update your tasks. This 
+feature will be removed from community.aws in version 3.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,052 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.iam_cert_facts has been deprecated. iam_cert_facts was renamed in Ansible 2.9 to 
+iam_server_certificate_info. Please update your tasks. This feature will be removed from community.aws in a release 
+after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,053 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.iam_mfa_device_facts has been deprecated. iam_mfa_device_facts was renamed in 
+Ansible 2.9 to iam_mfa_device_info. Please update your tasks. This feature will be removed from community.aws in a 
+release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,055 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.iam_role_facts has been deprecated. iam_role_facts was renamed in Ansible 2.9 to 
+iam_role_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,057 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.iam_server_certificate_facts has been deprecated. iam_server_certificate_facts was
+ renamed in Ansible 2.9 to iam_server_certificate_info. Please update your tasks. This feature will be removed from 
+community.aws in a release after 2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False
+ in ansible.cfg.
+2022-02-03 17:58:09,058 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.lambda_facts has been deprecated. lambda_facts has been deprecated and will be 
+removed. The lambda_info module returns the same information, but not as ansible_facts.  See the module documentation 
+for more information. This feature will be removed from community.aws in a release after 2021-12-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,063 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.rds has been deprecated. The rds module is based upon a deprecated version of the 
+AWS SDKs and is deprecated in favor of the rds_instance and rds_snapshot modules. Please update your tasks. This 
+feature will be removed from community.aws in version 3.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,065 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.rds_instance_facts has been deprecated. rds_instance_facts was renamed in Ansible 
+2.9 to rds_instance_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,067 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.rds_snapshot_facts has been deprecated. rds_snapshot_facts was renamed in Ansible 
+2.9 to rds_snapshot_info. Please update your tasks. This feature will be removed from community.aws in a release after 
+2021-12-01. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,068 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.redshift_facts has been deprecated. redshift_facts was renamed in Ansible 2.9 to 
+redshift_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,069 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.aws.route53_facts has been deprecated. route53_facts was renamed in Ansible 2.9 to 
+route53_info. Please update your tasks. This feature will be removed from community.aws in a release after 2021-12-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,072 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_aks_facts has been deprecated. Use azure.azcollection.azure_rm_aks_info
+ instead. This feature will be removed from community.azure in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,074 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_aks_info has been deprecated. Use azure.azcollection.azure_rm_aks_info 
+instead. This feature will be removed from community.azure in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,078 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_aksversion_facts has been deprecated. Use 
+azure.azcollection.azure_rm_aksversion_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,079 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_aksversion_info has been deprecated. Use 
+azure.azcollection.azure_rm_aksversion_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,080 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_applicationsecuritygroup_facts has been deprecated. Use 
+azure.azcollection.azure_rm_applicationsecuritygroup_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,081 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_applicationsecuritygroup_info has been deprecated. Use 
+azure.azcollection.azure_rm_applicationsecuritygroup_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,081 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_appserviceplan_facts has been deprecated. Use 
+azure.azcollection.azure_rm_appserviceplan_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,082 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_appserviceplan_info has been deprecated. Use 
+azure.azcollection.azure_rm_appserviceplan_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,083 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_automationaccount_facts has been deprecated. Use 
+azure.azcollection.azure_rm_automationaccount_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,084 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_automationaccount_info has been deprecated. Use 
+azure.azcollection.azure_rm_automationaccount_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,084 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_autoscale_facts has been deprecated. Use 
+azure.azcollection.azure_rm_autoscale_info instead. This feature will be removed from community.azure in version 2.0.0.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,085 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_autoscale_info has been deprecated. Use 
+azure.azcollection.azure_rm_autoscale_info instead. This feature will be removed from community.azure in version 2.0.0.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,087 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_availabilityset_facts has been deprecated. Use 
+azure.azcollection.azure_rm_availabilityset_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,087 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_availabilityset_info has been deprecated. Use 
+azure.azcollection.azure_rm_availabilityset_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,088 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cdnendpoint_facts has been deprecated. Use 
+azure.azcollection.azure_rm_cdnendpoint_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,090 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cdnendpoint_info has been deprecated. Use 
+azure.azcollection.azure_rm_cdnendpoint_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,094 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cdnprofile_facts has been deprecated. Use 
+azure.azcollection.azure_rm_cdnprofile_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,096 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cdnprofile_info has been deprecated. Use 
+azure.azcollection.azure_rm_cdnprofile_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,097 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_containerinstance_facts has been deprecated. Use 
+azure.azcollection.azure_rm_containerinstance_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,098 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_containerinstance_info has been deprecated. Use 
+azure.azcollection.azure_rm_containerinstance_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,099 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_containerregistry_facts has been deprecated. Use 
+azure.azcollection.azure_rm_containerregistry_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,100 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_containerregistry_info has been deprecated. Use 
+azure.azcollection.azure_rm_containerregistry_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,101 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cosmosdbaccount_facts has been deprecated. Use 
+azure.azcollection.azure_rm_cosmosdbaccount_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,102 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_cosmosdbaccount_info has been deprecated. Use 
+azure.azcollection.azure_rm_cosmosdbaccount_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,103 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_deployment_facts has been deprecated. Use 
+azure.azcollection.azure_rm_deployment_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,104 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_deployment_info has been deprecated. Use 
+azure.azcollection.azure_rm_deployment_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,105 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlab_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlab_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,110 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlab_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlab_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,111 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabarmtemplate_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabarmtemplate_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,113 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabarmtemplate_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabarmtemplate_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,114 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabartifact_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabartifact_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,114 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabartifact_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabartifact_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,115 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabartifactsource_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabartifactsource_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,117 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabartifactsource_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabartifactsource_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,117 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabcustomimage_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabcustomimage_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,118 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabcustomimage_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabcustomimage_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,119 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabenvironment_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabenvironment_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,120 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabenvironment_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabenvironment_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,121 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabpolicy_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabpolicy_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,126 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabpolicy_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabpolicy_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,127 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabschedule_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabschedule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,129 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabschedule_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabschedule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,130 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabvirtualmachine_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabvirtualmachine_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,130 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabvirtualmachine_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabvirtualmachine_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,131 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabvirtualnetwork_facts has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabvirtualnetwork_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,131 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_devtestlabvirtualnetwork_info has been deprecated. Use 
+azure.azcollection.azure_rm_devtestlabvirtualnetwork_info instead. This feature will be removed from community.azure in
+ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,132 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_dnsrecordset_facts has been deprecated. Use 
+azure.azcollection.azure_rm_dnsrecordset_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,133 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_dnsrecordset_info has been deprecated. Use 
+azure.azcollection.azure_rm_dnsrecordset_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,134 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_dnszone_facts has been deprecated. Use 
+azure.azcollection.azure_rm_dnszone_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,135 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_dnszone_info has been deprecated. Use 
+azure.azcollection.azure_rm_dnszone_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,136 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_functionapp_facts has been deprecated. Use 
+azure.azcollection.azure_rm_functionapp_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,140 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_functionapp_info has been deprecated. Use 
+azure.azcollection.azure_rm_functionapp_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,142 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_hdinsightcluster_facts has been deprecated. Use 
+azure.azcollection.azure_rm_hdinsightcluster_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,143 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_hdinsightcluster_info has been deprecated. Use 
+azure.azcollection.azure_rm_hdinsightcluster_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,144 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_image_facts has been deprecated. Use 
+azure.azcollection.azure_rm_image_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,144 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_image_info has been deprecated. Use 
+azure.azcollection.azure_rm_image_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,145 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_loadbalancer_facts has been deprecated. Use 
+azure.azcollection.azure_rm_loadbalancer_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,146 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_loadbalancer_info has been deprecated. Use 
+azure.azcollection.azure_rm_loadbalancer_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,147 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_lock_facts has been deprecated. Use 
+azure.azcollection.azure_rm_lock_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,148 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_lock_info has been deprecated. Use 
+azure.azcollection.azure_rm_lock_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,149 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_loganalyticsworkspace_facts has been deprecated. Use 
+azure.azcollection.azure_rm_loganalyticsworkspace_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,150 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_loganalyticsworkspace_info has been deprecated. Use 
+azure.azcollection.azure_rm_loganalyticsworkspace_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,151 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_managed_disk has been deprecated. Use 
+azure.azcollection.azure_rm_manageddisk instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,151 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_managed_disk_facts has been deprecated. Use 
+azure.azcollection.azure_rm_manageddisk_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,159 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_manageddisk has been deprecated. Use 
+azure.azcollection.azure_rm_manageddisk instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,161 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_manageddisk_facts has been deprecated. Use 
+azure.azcollection.azure_rm_manageddisk_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,162 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_manageddisk_info has been deprecated. Use 
+azure.azcollection.azure_rm_manageddisk_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,163 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbconfiguration_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,164 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbconfiguration_info has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,164 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbdatabase_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbdatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,166 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbdatabase_info has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbdatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,166 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbfirewallrule_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,167 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbfirewallrule_info has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,172 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbserver_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbserver_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,174 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mariadbserver_info has been deprecated. Use 
+azure.azcollection.azure_rm_mariadbserver_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,176 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlconfiguration_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,177 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlconfiguration_info has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,178 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqldatabase_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mysqldatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,179 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqldatabase_info has been deprecated. Use 
+azure.azcollection.azure_rm_mysqldatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,180 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlfirewallrule_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,180 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlfirewallrule_info has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,181 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlserver_facts has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlserver_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,182 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_mysqlserver_info has been deprecated. Use 
+azure.azcollection.azure_rm_mysqlserver_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,183 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_networkinterface_facts has been deprecated. Use 
+azure.azcollection.azure_rm_networkinterface_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,188 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_networkinterface_info has been deprecated. Use 
+azure.azcollection.azure_rm_networkinterface_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,190 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlconfiguration_facts has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,191 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlconfiguration_info has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlconfiguration_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,192 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqldatabase_facts has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqldatabase_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,193 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqldatabase_info has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqldatabase_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,194 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlfirewallrule_facts has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,195 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlfirewallrule_info has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlfirewallrule_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,196 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlserver_facts has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlserver_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,197 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_postgresqlserver_info has been deprecated. Use 
+azure.azcollection.azure_rm_postgresqlserver_info instead. This feature will be removed from community.azure in version
+ 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,198 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_publicipaddress_facts has been deprecated. Use 
+azure.azcollection.azure_rm_publicipaddress_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,199 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_publicipaddress_info has been deprecated. Use 
+azure.azcollection.azure_rm_publicipaddress_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,203 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_rediscache_facts has been deprecated. Use 
+azure.azcollection.azure_rm_rediscache_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,205 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_rediscache_info has been deprecated. Use 
+azure.azcollection.azure_rm_rediscache_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,207 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_resource_facts has been deprecated. Use 
+azure.azcollection.azure_rm_resource_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,208 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_resource_info has been deprecated. Use 
+azure.azcollection.azure_rm_resource_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,209 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_resourcegroup_facts has been deprecated. Use 
+azure.azcollection.azure_rm_resourcegroup_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,210 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_resourcegroup_info has been deprecated. Use 
+azure.azcollection.azure_rm_resourcegroup_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,211 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_roleassignment_facts has been deprecated. Use 
+azure.azcollection.azure_rm_roleassignment_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,211 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_roleassignment_info has been deprecated. Use 
+azure.azcollection.azure_rm_roleassignment_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,212 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_roledefinition_facts has been deprecated. Use 
+azure.azcollection.azure_rm_roledefinition_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,213 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_roledefinition_info has been deprecated. Use 
+azure.azcollection.azure_rm_roledefinition_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,214 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_routetable_facts has been deprecated. Use 
+azure.azcollection.azure_rm_routetable_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,214 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_routetable_info has been deprecated. Use 
+azure.azcollection.azure_rm_routetable_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,219 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_securitygroup_facts has been deprecated. Use 
+azure.azcollection.azure_rm_securitygroup_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,220 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_securitygroup_info has been deprecated. Use 
+azure.azcollection.azure_rm_securitygroup_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,221 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_servicebus_facts has been deprecated. Use 
+azure.azcollection.azure_rm_servicebus_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,224 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_servicebus_info has been deprecated. Use 
+azure.azcollection.azure_rm_servicebus_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,225 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqldatabase_facts has been deprecated. Use 
+azure.azcollection.azure_rm_sqldatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,226 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqldatabase_info has been deprecated. Use 
+azure.azcollection.azure_rm_sqldatabase_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,226 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqlfirewallrule_facts has been deprecated. Use 
+azure.azcollection.azure_rm_sqlfirewallrule_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,227 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqlfirewallrule_info has been deprecated. Use 
+azure.azcollection.azure_rm_sqlfirewallrule_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,228 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqlserver_facts has been deprecated. Use 
+azure.azcollection.azure_rm_sqlserver_info instead. This feature will be removed from community.azure in version 2.0.0.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,229 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_sqlserver_info has been deprecated. Use 
+azure.azcollection.azure_rm_sqlserver_info instead. This feature will be removed from community.azure in version 2.0.0.
+ Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,230 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_storageaccount_facts has been deprecated. Use 
+azure.azcollection.azure_rm_storageaccount_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,234 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_storageaccount_info has been deprecated. Use 
+azure.azcollection.azure_rm_storageaccount_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,236 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_subnet_facts has been deprecated. Use 
+azure.azcollection.azure_rm_subnet_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,237 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_subnet_info has been deprecated. Use 
+azure.azcollection.azure_rm_subnet_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,238 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_trafficmanagerendpoint_facts has been deprecated. Use 
+azure.azcollection.azure_rm_trafficmanagerendpoint_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,240 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_trafficmanagerendpoint_info has been deprecated. Use 
+azure.azcollection.azure_rm_trafficmanagerendpoint_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,241 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_trafficmanagerprofile_facts has been deprecated. Use 
+azure.azcollection.azure_rm_trafficmanagerprofile_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,242 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_trafficmanagerprofile_info has been deprecated. Use 
+azure.azcollection.azure_rm_trafficmanagerprofile_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,242 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachine_extension has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineextension instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,243 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachine_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachine_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,244 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachine_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachine_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,245 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachine_scaleset has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescaleset instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,249 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachine_scaleset_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescaleset_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,250 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachineextension has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineextension instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,252 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachineextension_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineextension_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,253 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachineextension_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineextension_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,254 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachineimage_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineimage_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,255 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachineimage_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachineimage_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,257 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescaleset has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescaleset instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,258 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescaleset_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescaleset_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,259 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescaleset_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescaleset_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,260 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescalesetextension_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescalesetextension_info instead. This feature will be removed from 
+community.azure in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,261 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescalesetextension_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescalesetextension_info instead. This feature will be removed from 
+community.azure in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,265 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescalesetinstance_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescalesetinstance_info instead. This feature will be removed from 
+community.azure in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,266 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualmachinescalesetinstance_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualmachinescalesetinstance_info instead. This feature will be removed from 
+community.azure in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,268 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualnetwork_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualnetwork_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,269 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualnetwork_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualnetwork_info instead. This feature will be removed from community.azure in version 
+2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,270 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualnetworkpeering_facts has been deprecated. Use 
+azure.azcollection.azure_rm_virtualnetworkpeering_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,271 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_virtualnetworkpeering_info has been deprecated. Use 
+azure.azcollection.azure_rm_virtualnetworkpeering_info instead. This feature will be removed from community.azure in 
+version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,272 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_webapp_facts has been deprecated. Use 
+azure.azcollection.azure_rm_webapp_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,274 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.azure.azure_rm_webapp_info has been deprecated. Use 
+azure.azcollection.azure_rm_webapp_info instead. This feature will be removed from community.azure in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,281 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,282 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_account_facts has been deprecated. see plugin documentation
+ for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,284 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_certificate_facts has been deprecated. see plugin 
+documentation for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,285 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_domain_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,287 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_firewall_facts has been deprecated. see plugin 
+documentation for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,296 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_floating_ip_facts has been deprecated. see plugin 
+documentation for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,298 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_image_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,299 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_load_balancer_facts has been deprecated. see plugin 
+documentation for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,301 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_region_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,302 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_size_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,303 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_snapshot_facts has been deprecated. see plugin 
+documentation for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,304 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_sshkey_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,305 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_tag_facts has been deprecated. see plugin documentation for
+ details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,307 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.digitalocean.digital_ocean_volume_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.digitalocean in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,314 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.dns.hosttech_dns_records has been deprecated. The hosttech_dns_records module has been
+ renamed to hosttech_dns_record_sets. This feature will be removed from community.dns in version 3.0.0. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,390 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vca_fw has been deprecated. see plugin documentation for details. This feature 
+will be removed from community.vmware in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,391 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vca_nat has been deprecated. see plugin documentation for details. This feature
+ will be removed from community.vmware in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,391 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vca_vapp has been deprecated. see plugin documentation for details. This 
+feature will be removed from community.vmware in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,392 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vcenter_extension_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,393 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_about_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,394 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_category_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,395 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_cluster_facts has been deprecated. see plugin documentation for details.
+ This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,396 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_datastore_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,397 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_dns_config has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.vmware in a release after 2022-06-01. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,398 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_drs_group_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,399 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_drs_rule_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,400 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_dvs_portgroup_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,402 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_boot_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,406 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_customization_facts has been deprecated. see plugin documentation 
+for details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can
+ be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,407 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_disk_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,409 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,411 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_snapshot_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,412 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_guest_vnc has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.vmware in a release after 2022-10-15. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,413 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_capability_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,414 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_config_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,415 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_dns_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,416 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_feature_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,417 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_firewall_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,419 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_ntp_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,424 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_package_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,428 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_service_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,429 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_ssl_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,430 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_vmhba_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,431 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_host_vmnic_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,432 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_local_role_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,433 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_local_user_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,434 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_portgroup_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,438 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_resource_pool_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,440 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_tag_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,441 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_target_canonical_facts has been deprecated. see plugin documentation for
+ details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,442 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_vm_facts has been deprecated. see plugin documentation for details. This
+ feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,443 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_vmkernel_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,444 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_vmkernel_ip_config has been deprecated. see plugin documentation for 
+details. This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,445 p=11847 u=root n=ansible | [DEPRECATION WARNING]: community.vmware.vmware_vswitch_facts has been deprecated. see plugin documentation for details.
+ This feature will be removed from community.vmware in a release after 2021-12-01. Deprecation warnings can be disabled
+ by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,460 p=11847 u=root n=ansible | [DEPRECATION WARNING]: dellemc.openmanage.dellemc_get_firmware_inventory has been deprecated. 
+dellemc_get_firmware_inventory will be removed in a future release of this collection. Use 
+dellemc.openmanage.idrac_firmware_info instead. This feature will be removed from dellemc.openmanage in a release after
+ 2023-01-15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,461 p=11847 u=root n=ansible | [DEPRECATION WARNING]: dellemc.openmanage.dellemc_get_system_inventory has been deprecated. 
+dellemc_get_system_inventory will be removed in a future release of this collection. Use 
+dellemc.openmanage.idrac_system_info instead. This feature will be removed from dellemc.openmanage in a release after 
+2023-01-15. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,589 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_datacenter_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,590 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_floating_ip_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,591 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_image_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,593 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_location_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,594 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_server_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,595 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_server_type_facts has been deprecated. see plugin documentation for 
+details. This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,596 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_ssh_key_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,597 p=11847 u=root n=ansible | [DEPRECATION WARNING]: hetzner.hcloud.hcloud_volume_facts has been deprecated. see plugin documentation for details. 
+This feature will be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,606 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.add_ad_group has been deprecated. Use inspur.sm.ad_group. This feature will be removed
+ from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,610 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.add_ldap_group has been deprecated. Use inspur.sm.ldap_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,611 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.add_user has been deprecated. Use inspur.sm.user. This feature will be removed from 
+inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,613 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.add_user_group has been deprecated. Use inspur.sm.user_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,615 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.del_ad_group has been deprecated. Use inspur.sm.ad_group. This feature will be removed
+ from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,616 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.del_ldap_group has been deprecated. Use inspur.sm.ldap_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,617 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.del_user has been deprecated. Use inspur.sm.user. This feature will be removed from 
+inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,618 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.del_user_group has been deprecated. Use inspur.sm.user_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,619 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.edit_ad_group has been deprecated. Use inspur.sm.ad_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,620 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.edit_ldap_group has been deprecated. Use inspur.sm.ldap_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,622 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.edit_pass_user has been deprecated. Use inspur.sm.user. This feature will be removed 
+from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,627 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.edit_priv_user has been deprecated. Use inspur.sm.user. This feature will be removed 
+from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,629 p=11847 u=root n=ansible | [DEPRECATION WARNING]: inspur.sm.edit_user_group has been deprecated. Use inspur.sm.user_group. This feature will be 
+removed from inspur.sm in version 3.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,635 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_interface has been deprecated. See the plugin documentation for more
+ details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,636 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_l2_interface has been deprecated. See the plugin documentation for 
+more details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,637 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_l3_interface has been deprecated. See the plugin documentation for 
+more details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,640 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_linkagg has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,643 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_lldp has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,645 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_lldp_interface has been deprecated. See the plugin documentation for
+ more details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,646 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_logging has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from junipernetworks.junos in a release after 2023-08-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,648 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_static_route has been deprecated. See the plugin documentation for 
+more details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,649 p=11847 u=root n=ansible | [DEPRECATION WARNING]: junipernetworks.junos.junos_vlan has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from junipernetworks.junos in a release after 2022-06-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,689 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_auth has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.auth. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,695 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_client_config has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.config. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,697 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_coe_cluster has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.coe_cluster. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,698 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_coe_cluster_template has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.coe_cluster_template. This feature will be removed from openstack.cloud in a release 
+after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,699 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_flavor_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.compute_flavor_info. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,700 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_floating_ip has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.floating_ip. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,700 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_group has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_group. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,701 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_group_info has been deprecated. os_ prefixed module names are deprecated, use
+ openstack.cloud.identity_group_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,702 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_image has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.image. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,703 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_image_info has been deprecated. os_ prefixed module names are deprecated, use
+ openstack.cloud.image_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,707 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_ironic has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.baremetal_node. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,708 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_ironic_inspect has been deprecated. os_ prefixed module names are deprecated,
+ use openstack.cloud.baremetal_inspect. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,709 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_ironic_node has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.baremetal_node_action. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,710 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keypair has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.keypair. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,710 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_domain has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.identity_domain. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,711 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_domain_info has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.identity_domain_info. This feature will be removed from openstack.cloud in a release 
+after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,712 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_endpoint has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.endpoint. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,713 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_federation_protocol has been deprecated. os_ prefixed module names 
+are deprecated, use openstack.cloud.keystone_federation_protocol. This feature will be removed from openstack.cloud in 
+a release after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,714 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_federation_protocol_info has been deprecated. os_ prefixed module 
+names are deprecated, use openstack.cloud.keystone_federation_protocol_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,715 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_identity_provider has been deprecated. os_ prefixed module names are
+ deprecated, use openstack.cloud.federation_idp. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,715 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_identity_provider_info has been deprecated. os_ prefixed module 
+names are deprecated, use openstack.cloud.federation_idp_info. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,716 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_mapping has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.federation_mapping. This feature will be removed from openstack.cloud in a release 
+after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,717 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_mapping_info has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.federation_mapping_info. This feature will be removed from openstack.cloud in a release
+ after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,722 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_role has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.identity_role. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,724 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_keystone_service has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.catalog_service. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,725 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_listener has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_listener. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,726 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_loadbalancer has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.loadbalancer. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,727 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_member has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_member. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation
+ warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,728 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_network has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.network. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,729 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_networks_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.networks_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,730 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_nova_flavor has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.compute_flavor. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,730 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_nova_host_aggregate has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.host_aggregate. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,731 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_object has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.object. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,732 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_pool has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_pool. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,733 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_port has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.port. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,738 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_port_info has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.port_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation
+ warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,740 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_project has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.project. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,741 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_project_access has been deprecated. os_ prefixed module names are deprecated,
+ use openstack.cloud.project_access. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,742 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_project_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.project_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,743 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_quota has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.quota. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,744 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_recordset has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.recordset. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation
+ warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,745 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_router has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.router. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,746 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_routers_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.routers_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,747 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_security_group has been deprecated. os_ prefixed module names are deprecated,
+ use openstack.cloud.security_group. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,747 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_security_group_rule has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.security_group_rule. This feature will be removed from openstack.cloud in a release 
+after 2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,748 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.server. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,752 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server_action has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.server_action. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,753 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server_group has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.server_group. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,755 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.server_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,757 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server_metadata has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.server_metadata. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,758 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_server_volume has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.server_volume. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,759 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_stack has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.stack. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,760 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_subnet has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.subnet. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,760 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_subnets_info has been deprecated. os_ prefixed module names are deprecated, 
+use openstack.cloud.subnets_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,761 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_user has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_user. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,762 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_user_group has been deprecated. os_ prefixed module names are deprecated, use
+ openstack.cloud.group_assignment. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,763 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_user_info has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_user_info. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,764 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_user_role has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.role_assignment. This feature will be removed from openstack.cloud in a release after 2021-12-12. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,768 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_volume has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.volume. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,769 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_volume_snapshot has been deprecated. os_ prefixed module names are 
+deprecated, use openstack.cloud.volume_snapshot. This feature will be removed from openstack.cloud in a release after 
+2021-12-12. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,770 p=11847 u=root n=ansible | [DEPRECATION WARNING]: openstack.cloud.os_zone has been deprecated. os_ prefixed module names are deprecated, use 
+openstack.cloud.dns_zone. This feature will be removed from openstack.cloud in a release after 2021-12-12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,784 p=11847 u=root n=ansible | [DEPRECATION WARNING]: purestorage.flasharray.purefa_sso has been deprecated. purefa_sso will be removed in a future 
+release of this collection, Use purestorage.flasharray.purefa_admin instead. This feature will be removed from 
+purestorage.flasharray in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2022-02-03 17:58:09,805 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,807 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_l3_interface has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,809 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_linkagg has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,810 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_lldp has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,811 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_lldp_interface has been deprecated. See the plugin documentation for more 
+details. This feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,814 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_logging has been deprecated. See the plugin documentation for more details. This 
+feature will be removed from vyos.vyos in a release after 2023-08-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:09,815 p=11847 u=root n=ansible | [DEPRECATION WARNING]: vyos.vyos.vyos_static_route has been deprecated. See the plugin documentation for more details. 
+This feature will be removed from vyos.vyos in a release after 2022-06-01. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2022-02-03 17:58:29,715 p=11847 u=root n=ansible | [WARNING]: dellemc.openmanage.ome_active_directory has a documentation formatting error
+

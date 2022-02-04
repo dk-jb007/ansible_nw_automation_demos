@@ -1,0 +1,34 @@
+
+---
+- name: Managing Cisco IOS Devices
+  hosts: iosxe
+  gather_facts: false
+  
+  vars :
+    cli:
+      host: "{{ inventory_hostname }}"
+      username: "developer"
+      password: "C1sco12345"
+      transport: cli
+      timeout: 120
+
+  tasks:
+
+    - name: execute show version
+      ios_command:
+        commands:
+          - command: "show ver | i Version [0-9][0-9]"
+        provider: "{{ cli }}"
+      register: cmd_output
+
+    - name: delete old local file contents
+      local_action: command cp /dev/null ./ios_version.txt
+
+    - name: save output to file
+      lineinfile:
+        dest: "./ios_version.txt"
+        line: "- {{ inventory_hostname }}:\n{{ cmd_output.stdout[0] }}\n"
+      delegate_to: localhost
+
+
+

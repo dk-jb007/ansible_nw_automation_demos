@@ -1,0 +1,26 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+
+    vars :
+      dict :
+        dict_key : dictionary value
+
+    tasks :
+      - name : Test Dictionary key value 
+        debug :
+          msg : result is {{ dict }}
+
+      - name : Test Dictionary key value with dot notation  
+        debug :
+          msg : result is {{ dict.dict_key }}
+      
+      
+      - name : Test Dictionary key value with python notation 
+        debug :
+          msg : result is {{ dict['dict_key'] }}
+
+...
+
+

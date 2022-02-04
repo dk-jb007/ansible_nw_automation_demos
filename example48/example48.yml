@@ -1,0 +1,29 @@
+
+# ignore errors demo 
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : true
+    connection : local
+
+    tasks :
+
+        - name : check local time
+          command : date
+          register : command_result
+          changed_when : false 
+
+        - name : print local time 
+          debug : 
+            var : command_result['stdout']
+        
+        
+        - name  :  Run Show version on NXOS Devices 
+          nxos_command :
+            commands : 
+              - show version
+              - show interfaces 
+          ignore_errors : yes
+...
+          

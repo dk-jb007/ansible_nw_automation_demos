@@ -1,0 +1,36 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+
+    
+    tasks :
+
+      - name : change login banner 
+        ios_banner :
+          banner : login
+          text : THIS BANNER IS FROM MICROSOFT Hyd
+          state : present
+        notify : MyEvent
+      
+      
+      - name : change login banner - SECOND UPDATE  
+        ios_banner :
+          banner : login
+          text : "{{ lookup('file', './mybanner.cfg') }}"
+          state : present
+
+
+      - name : delete banner 
+        ios_banner :
+          banner : motd
+          state : absent
+
+    handlers :
+      - name : MyEvent
+        debug :
+          msg : "###########The Banner was changed#############"
+
+...

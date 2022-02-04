@@ -1,0 +1,54 @@
+
+RAW MODULE 
+
+
+ansible ios -m raw -u vishymails -a "show version" -k
+
+ansible ios -m raw -u vishymails -a "show verison -k | grep "CHANGED\|images"
+
+ansible tusredrwec3841 -m raw -u vishymails -a "show version -k | grep "CHANGED\|images"
+
+ansible all -m raw -u vishymails -a "show version -k | grep "CHANGED\|images"
+
+
+ansible all -m raw -u vishymails -a "show running-config | include username" -k
+
+
+ansible all -m raw -u vishymails -a "show ip interface brief" -k
+
+ansible all -m raw -u vishymails -a "show ip interface brief | exclude unass" -k
+
+ansible all -m raw -u vishymails -a "show arp" -k
+
+ansible all -m raw -u vishymails -a "show mac address-table | include " -k
+
+
+IOS MODULE 
+
+ansible ios -m ios_command -a "commands='show runn | inc username'"
+
+ansible ios -m ios_command -a "commands='show ip interface brief | exc upass'"
+
+ansible ios -m ios_facts -a "gather_subset=min"
+
+
+
+
+
+adhoc commands parameters
+
+-i = inventory
+-u = remote_user
+--become or -b = sudo previlages 
+--become-method = sudo
+--become-user 
+--become_ask_pass
+
+
+
+
+ ansible -m ping all -i hosts
+
+ansible -m ios_facts sandbox-iosxe-latest-1.cisco.com -c network_cli
+
+ https://devnetsandbox.cisco.com/

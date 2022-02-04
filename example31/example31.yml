@@ -1,0 +1,30 @@
+#  "ansible_net_serialnum": "9ESGOBARV9D",
+#         "ansible_net_system": "ios",
+
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : true
+    tasks :
+
+      - name : show fact variables
+        debug : 
+          var : ansible_facts
+
+          
+      - name  : Run Show version on Remote Devices 
+        ios_command :
+          commands : show version
+        register : version_result
+        when : ansible_facts['net_system'] == 'ios' and ansible_facts['net_model'] == 'CSR1000V'
+
+      - name  : Dont Run Show version on Remote Devices 
+        ios_command :
+          commands : show version
+        when : ansible_facts['net_system'] == 'nxos' and ansible_facts['net_model'] == 'CSR1000V'
+
+      - name : Print version
+        debug :
+          var : version_result
+...

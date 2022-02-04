@@ -1,0 +1,15 @@
+[ios]
+192.168.161.9
+ios2-rc ansible_host=192.168.161.10
+192.168.161.11
+
+
+[ios:vars]
+
+ansible_ssh_pass=cisco
+ansible_user=pi
+ansible_network_os=ios
+ansible_connection= network_cli
+
+
+

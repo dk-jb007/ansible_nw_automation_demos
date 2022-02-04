@@ -1,0 +1,14 @@
+---
+
+  galaxy_info :
+    author : Dr. Rao
+    description : 'IOS XE device automation tool - Role'
+    company : 'ISRO'
+    license : 'GPLv3'
+    max_ansible_version : '2.12.0'
+    min_ansible_version : '2.8.5'
+
+    galaxy_tags :
+      - networking 
+      
+...

@@ -1,0 +1,26 @@
+---
+  -
+    hosts : iosxe
+    gather_facts : false
+    connection : local
+
+    tasks :
+      - name : Test Host vars
+        debug : 
+          msg : "{{ inventory_hostname }} "
+
+      - name : Test Host name 
+        debug : 
+          msg : "{{ hostvars[ansible_host] }} "
+
+
+      - name : Test Host vars
+        debug : 
+          msg : "{{ hostvars[ansible_host].ansible_user | default('guest') }} "
+      
+      - name : Test Host vars dict notation 
+        debug : 
+          msg : "{{ hostvars[ansible_host]['ansible_port'] | default('22') }} "
+...
+
+

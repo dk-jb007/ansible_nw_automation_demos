@@ -1,0 +1,26 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+
+    vars :
+      named_list :
+        [ item1, item2, item3, item4, item5 ]
+
+    tasks :
+      - name : Test named_list value 
+        debug :
+          msg : result is {{ named_list }}
+
+      - name : Test named_list with dot notation  
+        debug :
+          msg : result is {{ named_list.3 }}
+      
+      
+      - name : Test named_list with python notation 
+        debug :
+          msg : result is {{ named_list[4] }}
+
+...
+
+

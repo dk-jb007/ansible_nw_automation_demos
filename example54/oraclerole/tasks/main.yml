@@ -1,0 +1,31 @@
+---
+      - name : change login banner 
+        ios_banner :
+          banner : login
+          text : THIS BANNER IS FROM MICROSOFT Hyd
+          state : present
+        notify : MyEvent
+      
+      
+      - name : change login banner - SECOND UPDATE  
+        ios_banner :
+          banner : login
+          text : "{{ lookup('file', 'mybanner.cfg') }}"
+          state : present
+
+
+      - name : delete banner 
+        ios_banner :
+          banner : motd
+          state : absent
+
+      - template :
+          src : example51.j2
+          dest : /etc/motd
+          owner : root
+          group : root
+          mode : 0644
+
+      - debug :
+         msg : "Creator : {{ creator }} from {{ company }} for {{ customer }}"
+...

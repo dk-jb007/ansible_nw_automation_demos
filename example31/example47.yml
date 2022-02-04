@@ -1,0 +1,44 @@
+# block, rescue, always
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : true
+    connection : local
+
+    
+    tasks :
+
+        - name : check local time
+          command : date
+          register : command_result
+          changed_when : false 
+
+        - name : print local time 
+          debug : 
+            var : command_result['stdout']
+
+
+        - block :
+            - name : Run Show version on IOSXE Devices 
+              ios_command :
+                commands : show version
+              register : version_result
+              failed_when : ansible_facts['net_system'] == 'ios'
+          
+          rescue :
+            - name  :  Run Show version on NXOS Devices 
+              nxos_command :
+                commands : 
+                  - show version
+                  - show interfaces 
+              register : version_result
+
+
+          always :
+            - name : Print details 
+              debug : 
+                msg : "Final Message {{ version_result }}"
+            
+     
+...

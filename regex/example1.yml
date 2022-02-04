@@ -1,0 +1,52 @@
+---
+
+## Example of use of filter regex_search
+
+- hosts: localhost
+  remote_user: root
+  tasks:
+  - name: set regex
+    set_fact:
+      az_rg_regex_pattern: "(?<=resourceGroups\/)(.*?)(?=\/)"
+      az_sa_regex_pattern: "(?<=storageAccounts\/)(.*)"
+      az_sa_id_test: "/subscriptions/s1/resourceGroups/rgroupName/providers
+      /Microsoft.Storage/storageAccounts/storageAccountNameDef1"
+      sa_rg_name_expected: "rgroupName"
+      sa_name_expected: "storageAccountNameDef1"
+  - name: set results
+    set_fact:
+      sa_rg_name_resulted: "{{ az_sa_id_test | regex_search(az_rg_regex_pattern) }}"
+
+  - name: set results2
+    set_fact:
+      sa_name_resulted: "{{ az_sa_id_test | regex_search(az_sa_regex_pattern) }}"
+    register: result2
+
+  - name: show result2
+    debug:
+      var: result2
+
+  - name: show results 1
+    debug:
+      var: az_sa_id_test | regex_search(az_rg_regex_pattern)
+
+  - name: show results 2
+    debug:
+      var: az_sa_id_test | regex_search(az_sa_regex_pattern)
+
+
+  - name: validation 1
+    fail:
+      msg: >-
+        {{ sa_rg_name_resulted }} - expected: {{ sa_rg_name_expected }}
+
+    when:
+      sa_rg_name_resulted != "rgroupName"
+
+  - name: validation 2
+    fail:
+      msg: >-
+        {{ sa_name_resulted }} - expected: {{ sa_name_expected }}
+
+    when:
+      sa_name_resulted != "storageAccountNameDef1"

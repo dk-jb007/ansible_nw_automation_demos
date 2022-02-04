@@ -1,0 +1,21 @@
+---
+ -
+    hosts : iosxe
+    gather_facts : false
+    tasks :
+      - name : Create Users
+        user :
+          name : "{{ item }}"
+          state : absent
+        with_items : [IBM, MICROSOFT, ISRO, ORACLE, SPACEX, SAP]
+
+      - name : Creating user directories 
+        file :
+          dest : "/home/{{ item.0 }}/{{ item.1 }}"
+          owner : "{{ item.0 }}"
+          group : "{{ item.0 }}"
+          state : directory
+        with_nested : 
+          - [IBM, MICROSOFT, ISRO, ORACLE, SPACEX, SAP]
+          - [cert, keys, tokens]
+...

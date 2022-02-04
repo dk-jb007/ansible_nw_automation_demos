@@ -1,0 +1,11 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    tasks :
+      - name : configure hostname 
+        ios_config :
+          lines : 
+            - "hostname {{ inventory_hostname }}"
+
+...

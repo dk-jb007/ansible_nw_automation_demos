@@ -1,0 +1,34 @@
+
+# "net_api": "cliconf",
+#  "net_hostname": "CLI_CONF_TEST",
+---
+  -
+    hosts : cisco
+    gather_facts : true
+    tasks :
+
+      - name : show fact variables
+        debug : 
+          var : ansible_facts
+
+          
+      - name  : Run Show version on IOSXE Devices 
+        ios_command :
+          commands : show version
+        register : version_result
+        when : (ansible_facts['net_system'] == 'ios' and ansible_facts['net_model'] == 'CSR1000V') or
+               (ansible_facts['net_system'] == 'ios' and ansible_facts['net_model'] == 'CSR9000V')
+               
+
+      - name  :  Run Show version on NXOS Devices 
+        nxos_command :
+          commands : 
+            - show version
+            - show interfaces 
+          
+        when : ansible_facts['net_api'] == 'cliconf' and ansible_facts['net_hostname'] == 'CLI_CONF_TEST'
+
+      - name : Print version
+        debug :
+          var : version_result
+...

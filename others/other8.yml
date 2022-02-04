@@ -1,0 +1,39 @@
+
+---
+- name: Managing Cisco IOS Devices
+  hosts: nxos
+  gather_facts: false
+  
+  vars :
+    cli:
+      host: "{{ inventory_hostname }}"
+      username: "developer"
+      password: "C1sco12345"
+      transport: cli
+      timeout: 120
+
+  tasks:
+
+      - name: do a config backup first
+        nxos_config:
+          backup: yes
+          provider: "{{ cli }}"
+
+      - name: write configuration and save it
+        nxos_config:
+          # pass the config file via --extra-vars cli argument
+         # src: "{{ src }}"
+    # alternatively use below options instead of config from src file
+          src :
+            lines:
+              - name SE-FireWall
+              - mode fabricpath
+            parents: vlan 3093
+            before: no vlan 3093  # have to specify valide details to store the file 
+          save: yes
+          provider: "{{ cli }}"
+        register: cmd_output
+
+      - debug: var=cmd_output
+
+

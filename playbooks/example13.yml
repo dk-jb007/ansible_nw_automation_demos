@@ -1,0 +1,13 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    tasks :
+      - name  : Run Show version on Remote Devices 
+        ios_command :
+          commands : show version
+        register : results 
+      
+      - debug : var=results
+
+...

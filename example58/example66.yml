@@ -1,0 +1,32 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    vars :
+      command_out :
+        stdout_lines : 
+          - 'first      second'
+          - '90909090   12121212'
+          - '23232323   45454545'
+    tasks : 
+      - set_fact : 
+          keys : "{{ command_out.stdout_lines[0].split() }}"
+        tags : t1
+
+      - debug : 
+          var : keys
+        tags : t1
+      
+      - set_fact : 
+          sql_list : "{{ sql_list | default([]) +
+                         [dict(keys | zip(item.split()))] }}"
+        loop : "{{ command_out.stdout_lines[1:] }}"
+
+      - debug :
+          var : sql_list
+          
+
+...

@@ -1,0 +1,27 @@
+
+---
+- name: Managing Cisco IOS Devices
+  hosts: nxos
+  gather_facts: false
+  
+  vars :
+    cli:
+      host: "{{ inventory_hostname }}"
+      username: "developer"
+      password: "C1sco12345"
+      transport: cli
+      timeout: 120
+
+  tasks :
+      - name: run arbitrary command on device
+        nxos_command:
+            commands:
+              - command: show feature | i nxapi
+            provider: "{{ cli }}"
+        register: cmd_output
+
+      
+      - debug: var=cmd_output
+
+
+

@@ -1,0 +1,541 @@
+All Ansible variables used 
+
+ansible_check_mode: false
+ansible_config_file: /ansible-examples/example48/ansible.cfg
+ansible_connection: ansible.netcommon.network_cli
+ansible_dependent_role_names: []
+ansible_diff_mode: false
+ansible_facts:
+    _ansible_facts_gathered: true
+    net_all_ipv4_addresses:
+    - 10.10.20.55
+    - 192.158.1.30
+    - 192.158.2.50
+    - 10.10.20.48
+    net_all_ipv6_addresses: []
+    net_api: cliconf
+    net_filesystems:
+    - 'bootflash:'
+    net_filesystems_info:
+        'bootflash:':
+            spacefree_kb: 5307320.0
+            spacetotal_kb: 6139200.0
+    net_gather_network_resources: []
+    net_gather_subset:
+    - interfaces
+    - default
+    - hardware
+    net_hostname: csr1000v-1
+    net_image: bootflash:packages.conf
+    net_interfaces:
+        GigabitEthernet1:
+            bandwidth: 1000000
+            description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+            duplex: Full
+            ipv4:
+            -   address: 10.10.20.55
+                subnet: '24'
+            -   address: 192.158.1.30
+                subnet: '24'
+            -   address: 192.158.2.50
+                subnet: '24'
+            -   address: 10.10.20.48
+                subnet: '24'
+            lineprotocol: up
+            macaddress: 0050.56bf.78ac
+            mediatype: Virtual
+            mtu: 1500
+            operstatus: up
+            type: CSR vNIC
+        GigabitEthernet2:
+            bandwidth: 1000000
+            description: Network Interface
+            duplex: Full
+            ipv4: []
+            lineprotocol: down
+            macaddress: 0050.56bf.4ea3
+            mediatype: Virtual
+            mtu: 1500
+            operstatus: administratively down
+            type: CSR vNIC
+        GigabitEthernet3:
+            bandwidth: 1000000
+            description: Network Interface
+            duplex: Full
+            ipv4: []
+            lineprotocol: down
+            macaddress: 0050.56bf.7db4
+            mediatype: Virtual
+            mtu: 1500
+            operstatus: administratively down
+            type: CSR vNIC
+        Loopback123:
+            bandwidth: 8000000
+            description: Configured by NETCONF
+            duplex: null
+            ipv4: []
+            lineprotocol: up
+            macaddress: null
+            mediatype: null
+            mtu: 1514
+            operstatus: up
+            type: null
+    net_iostype: IOS-XE
+    net_memfree_mb: 460432.23046875
+    net_memtotal_mb: 715569.98046875
+    net_model: CSR1000V
+    net_neighbors: {}
+    net_python_version: 3.8.10
+    net_serialnum: 9ESGOBARV9D
+    net_system: ios
+    net_version: 17.03.01a
+    network_resources: {}
+ansible_forks: 5
+ansible_inventory_sources:
+- /ansible-examples/example48/hosts
+ansible_net_all_ipv4_addresses:
+- 10.10.20.55
+- 192.158.1.30
+- 192.158.2.50
+- 10.10.20.48
+ansible_net_all_ipv6_addresses: []
+ansible_net_api: cliconf
+ansible_net_filesystems:
+- 'bootflash:'
+ansible_net_filesystems_info:
+    'bootflash:':
+        spacefree_kb: 5307320.0
+        spacetotal_kb: 6139200.0
+ansible_net_gather_network_resources: []
+ansible_net_gather_subset:
+- interfaces
+- default
+- hardware
+ansible_net_hostname: csr1000v-1
+ansible_net_image: bootflash:packages.conf
+ansible_net_interfaces:
+    GigabitEthernet1:
+        bandwidth: 1000000
+        description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+        duplex: Full
+        ipv4:
+        -   address: 10.10.20.55
+            subnet: '24'
+        -   address: 192.158.1.30
+            subnet: '24'
+        -   address: 192.158.2.50
+            subnet: '24'
+        -   address: 10.10.20.48
+            subnet: '24'
+        lineprotocol: up
+        macaddress: 0050.56bf.78ac
+        mediatype: Virtual
+        mtu: 1500
+        operstatus: up
+        type: CSR vNIC
+    GigabitEthernet2:
+        bandwidth: 1000000
+        description: Network Interface
+        duplex: Full
+        ipv4: []
+        lineprotocol: down
+        macaddress: 0050.56bf.4ea3
+        mediatype: Virtual
+        mtu: 1500
+        operstatus: administratively down
+        type: CSR vNIC
+    GigabitEthernet3:
+        bandwidth: 1000000
+        description: Network Interface
+        duplex: Full
+        ipv4: []
+        lineprotocol: down
+        macaddress: 0050.56bf.7db4
+        mediatype: Virtual
+        mtu: 1500
+        operstatus: administratively down
+        type: CSR vNIC
+    Loopback123:
+        bandwidth: 8000000
+        description: Configured by NETCONF
+        duplex: null
+        ipv4: []
+        lineprotocol: up
+        macaddress: null
+        mediatype: null
+        mtu: 1514
+        operstatus: up
+        type: null
+ansible_net_iostype: IOS-XE
+ansible_net_memfree_mb: 460432.23046875
+ansible_net_memtotal_mb: 715569.98046875
+ansible_net_model: CSR1000V
+ansible_net_neighbors: {}
+ansible_net_python_version: 3.8.10
+ansible_net_serialnum: 9ESGOBARV9D
+ansible_net_system: ios
+ansible_net_version: 17.03.01a
+ansible_network_os: cisco.ios.ios
+ansible_network_resources: {}
+ansible_password: C1sco12345
+ansible_play_batch: &id002
+- sandbox-iosxe-latest-1.cisco.com
+ansible_play_hosts:
+- sandbox-iosxe-latest-1.cisco.com
+ansible_play_hosts_all:
+- sandbox-iosxe-latest-1.cisco.com
+ansible_play_name: sandbox-iosxe-latest-1.cisco.com
+ansible_play_role_names: &id003 []
+ansible_playbook_python: /usr/bin/python3
+ansible_port: 22
+ansible_role_names: []
+ansible_run_tags:
+- all
+ansible_skip_tags: []
+ansible_user: developer
+ansible_verbosity: 0
+ansible_version:
+    full: 2.12.1
+    major: 2
+    minor: 12
+    revision: 1
+    string: 2.12.1
+environment: []
+group_names:
+- cisco
+- iosxe
+groups:
+    all:
+    - sandbox-iosxe-latest-1.cisco.com
+    - sandbox-iosxe-recomm-1.cisco.com
+    - sandbox-nxos-1.cisco.com
+    cisco:
+    - sandbox-iosxe-latest-1.cisco.com
+    - sandbox-nxos-1.cisco.com
+    iosxe:
+    - sandbox-iosxe-latest-1.cisco.com
+    - sandbox-iosxe-recomm-1.cisco.com
+    nxos:
+    - sandbox-nxos-1.cisco.com
+    ungrouped: &id001 []
+hostvars:
+    sandbox-iosxe-latest-1.cisco.com:
+        ansible_check_mode: false
+        ansible_config_file: /ansible-examples/example48/ansible.cfg
+        ansible_connection: ansible.netcommon.network_cli
+        ansible_diff_mode: false
+        ansible_facts:
+            _ansible_facts_gathered: true
+            net_all_ipv4_addresses:
+            - 10.10.20.55
+            - 192.158.1.30
+            - 192.158.2.50
+            - 10.10.20.48
+            net_all_ipv6_addresses: []
+            net_api: cliconf
+            net_filesystems:
+            - 'bootflash:'
+            net_filesystems_info:
+                'bootflash:':
+                    spacefree_kb: 5307320.0
+                    spacetotal_kb: 6139200.0
+            net_gather_network_resources: []
+            net_gather_subset:
+            - interfaces
+            - default
+            - hardware
+            net_hostname: csr1000v-1
+            net_image: bootflash:packages.conf
+            net_interfaces:
+                GigabitEthernet1:
+                    bandwidth: 1000000
+                    description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+                    duplex: Full
+                    ipv4:
+                    -   address: 10.10.20.55
+                        subnet: '24'
+                    -   address: 192.158.1.30
+                        subnet: '24'
+                    -   address: 192.158.2.50
+                        subnet: '24'
+                    -   address: 10.10.20.48
+                        subnet: '24'
+                    lineprotocol: up
+                    macaddress: 0050.56bf.78ac
+                    mediatype: Virtual
+                    mtu: 1500
+                    operstatus: up
+                    type: CSR vNIC
+                GigabitEthernet2:
+                    bandwidth: 1000000
+                    description: Network Interface
+                    duplex: Full
+                    ipv4: []
+                    lineprotocol: down
+                    macaddress: 0050.56bf.4ea3
+                    mediatype: Virtual
+                    mtu: 1500
+                    operstatus: administratively down
+                    type: CSR vNIC
+                GigabitEthernet3:
+                    bandwidth: 1000000
+                    description: Network Interface
+                    duplex: Full
+                    ipv4: []
+                    lineprotocol: down
+                    macaddress: 0050.56bf.7db4
+                    mediatype: Virtual
+                    mtu: 1500
+                    operstatus: administratively down
+                    type: CSR vNIC
+                Loopback123:
+                    bandwidth: 8000000
+                    description: Configured by NETCONF
+                    duplex: null
+                    ipv4: []
+                    lineprotocol: up
+                    macaddress: null
+                    mediatype: null
+                    mtu: 1514
+                    operstatus: up
+                    type: null
+            net_iostype: IOS-XE
+            net_memfree_mb: 460432.23046875
+            net_memtotal_mb: 715569.98046875
+            net_model: CSR1000V
+            net_neighbors: {}
+            net_python_version: 3.8.10
+            net_serialnum: 9ESGOBARV9D
+            net_system: ios
+            net_version: 17.03.01a
+            network_resources: {}
+        ansible_forks: 5
+        ansible_inventory_sources:
+        - /ansible-examples/example48/hosts
+        ansible_net_all_ipv4_addresses:
+        - 10.10.20.55
+        - 192.158.1.30
+        - 192.158.2.50
+        - 10.10.20.48
+        ansible_net_all_ipv6_addresses: []
+        ansible_net_api: cliconf
+        ansible_net_filesystems:
+        - 'bootflash:'
+        ansible_net_filesystems_info:
+            'bootflash:':
+                spacefree_kb: 5307320.0
+                spacetotal_kb: 6139200.0
+        ansible_net_gather_network_resources: []
+        ansible_net_gather_subset:
+        - interfaces
+        - default
+        - hardware
+        ansible_net_hostname: csr1000v-1
+        ansible_net_image: bootflash:packages.conf
+        ansible_net_interfaces:
+            GigabitEthernet1:
+                bandwidth: 1000000
+                description: MANAGEMENT INTERFACE - DON'T TOUCH ME
+                duplex: Full
+                ipv4:
+                -   address: 10.10.20.55
+                    subnet: '24'
+                -   address: 192.158.1.30
+                    subnet: '24'
+                -   address: 192.158.2.50
+                    subnet: '24'
+                -   address: 10.10.20.48
+                    subnet: '24'
+                lineprotocol: up
+                macaddress: 0050.56bf.78ac
+                mediatype: Virtual
+                mtu: 1500
+                operstatus: up
+                type: CSR vNIC
+            GigabitEthernet2:
+                bandwidth: 1000000
+                description: Network Interface
+                duplex: Full
+                ipv4: []
+                lineprotocol: down
+                macaddress: 0050.56bf.4ea3
+                mediatype: Virtual
+                mtu: 1500
+                operstatus: administratively down
+                type: CSR vNIC
+            GigabitEthernet3:
+                bandwidth: 1000000
+                description: Network Interface
+                duplex: Full
+                ipv4: []
+                lineprotocol: down
+                macaddress: 0050.56bf.7db4
+                mediatype: Virtual
+                mtu: 1500
+                operstatus: administratively down
+                type: CSR vNIC
+            Loopback123:
+                bandwidth: 8000000
+                description: Configured by NETCONF
+                duplex: null
+                ipv4: []
+                lineprotocol: up
+                macaddress: null
+                mediatype: null
+                mtu: 1514
+                operstatus: up
+                type: null
+        ansible_net_iostype: IOS-XE
+        ansible_net_memfree_mb: 460432.23046875
+        ansible_net_memtotal_mb: 715569.98046875
+        ansible_net_model: CSR1000V
+        ansible_net_neighbors: {}
+        ansible_net_python_version: 3.8.10
+        ansible_net_serialnum: 9ESGOBARV9D
+        ansible_net_system: ios
+        ansible_net_version: 17.03.01a
+        ansible_network_os: cisco.ios.ios
+        ansible_network_resources: {}
+        ansible_password: C1sco12345
+        ansible_playbook_python: /usr/bin/python3
+        ansible_port: 22
+        ansible_run_tags:
+        - all
+        ansible_skip_tags: []
+        ansible_user: developer
+        ansible_verbosity: 0
+        ansible_version:
+            full: 2.12.1
+            major: 2
+            minor: 12
+            revision: 1
+            string: 2.12.1
+        group_names:
+        - cisco
+        - iosxe
+        groups:
+            all:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            cisco:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            iosxe:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            nxos:
+            - sandbox-nxos-1.cisco.com
+            ungrouped: *id001
+        inventory_dir: /ansible-examples/example48
+        inventory_file: /ansible-examples/example48/hosts
+        inventory_hostname: sandbox-iosxe-latest-1.cisco.com
+        inventory_hostname_short: sandbox-iosxe-latest-1
+        omit: __omit_place_holder__b86f1f21246384f404a32ba45cc3cf35f70d48fd
+        playbook_dir: /ansible-examples/example48
+    sandbox-iosxe-recomm-1.cisco.com:
+        ansible_check_mode: false
+        ansible_config_file: /ansible-examples/example48/ansible.cfg
+        ansible_connection: ansible.netcommon.network_cli
+        ansible_diff_mode: false
+        ansible_facts: {}
+        ansible_forks: 5
+        ansible_inventory_sources:
+        - /ansible-examples/example48/hosts
+        ansible_network_os: cisco.ios.ios
+        ansible_password: C1sco12345
+        ansible_playbook_python: /usr/bin/python3
+        ansible_port: 22
+        ansible_run_tags:
+        - all
+        ansible_skip_tags: []
+        ansible_user: developer
+        ansible_verbosity: 0
+        ansible_version:
+            full: 2.12.1
+            major: 2
+            minor: 12
+            revision: 1
+            string: 2.12.1
+        group_names:
+        - iosxe
+        groups:
+            all:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            cisco:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            iosxe:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            nxos:
+            - sandbox-nxos-1.cisco.com
+            ungrouped: *id001
+        inventory_dir: /ansible-examples/example48
+        inventory_file: /ansible-examples/example48/hosts
+        inventory_hostname: sandbox-iosxe-recomm-1.cisco.com
+        inventory_hostname_short: sandbox-iosxe-recomm-1
+        omit: __omit_place_holder__b86f1f21246384f404a32ba45cc3cf35f70d48fd
+        playbook_dir: /ansible-examples/example48
+    sandbox-nxos-1.cisco.com:
+        ansible_check_mode: false
+        ansible_config_file: /ansible-examples/example48/ansible.cfg
+        ansible_connection: ansible.netcommon.network_cli
+        ansible_diff_mode: false
+        ansible_facts: {}
+        ansible_forks: 5
+        ansible_inventory_sources:
+        - /ansible-examples/example48/hosts
+        ansible_network_os: cisco.nxos.nxos
+        ansible_password: Admin_1234!
+        ansible_playbook_python: /usr/bin/python3
+        ansible_run_tags:
+        - all
+        ansible_skip_tags: []
+        ansible_user: admin
+        ansible_verbosity: 0
+        ansible_version:
+            full: 2.12.1
+            major: 2
+            minor: 12
+            revision: 1
+            string: 2.12.1
+        group_names:
+        - cisco
+        - nxos
+        groups:
+            all:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            cisco:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-nxos-1.cisco.com
+            iosxe:
+            - sandbox-iosxe-latest-1.cisco.com
+            - sandbox-iosxe-recomm-1.cisco.com
+            nxos:
+            - sandbox-nxos-1.cisco.com
+            ungrouped: *id001
+        inventory_dir: /ansible-examples/example48
+        inventory_file: /ansible-examples/example48/hosts
+        inventory_hostname: sandbox-nxos-1.cisco.com
+        inventory_hostname_short: sandbox-nxos-1
+        omit: __omit_place_holder__b86f1f21246384f404a32ba45cc3cf35f70d48fd
+        playbook_dir: /ansible-examples/example48
+inventory_dir: /ansible-examples/example48
+inventory_file: /ansible-examples/example48/hosts
+inventory_hostname: sandbox-iosxe-latest-1.cisco.com
+inventory_hostname_short: sandbox-iosxe-latest-1
+omit: __omit_place_holder__b86f1f21246384f404a32ba45cc3cf35f70d48fd
+play_hosts: *id002
+playbook_dir: /ansible-examples/example48
+program_owner: Dr.Rao
+role_names: *id003
+users:
+- user1
+- user2
+- user3
+- user4

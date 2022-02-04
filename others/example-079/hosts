@@ -1,0 +1,13 @@
+
+[iosxe]
+sandbox-iosxe-latest-1.cisco.com
+sandbox-iosxe-recomm-1.cisco.com
+
+
+[nxos]
+sandbox-nxos-1.cisco.com
+
+
+[cisco]
+sandbox-iosxe-latest-1.cisco.com
+sandbox-nxos-1.cisco.com

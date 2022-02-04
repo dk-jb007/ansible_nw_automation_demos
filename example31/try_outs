@@ -1,0 +1,7 @@
+net_interfaces (dictionary) - GigabitEthernet1 (dictionary) - mtu =1500
+
+
+ansible_facts.net_interfaces.GigabitEthernet1.mtu | int >= 1400 - casting required 
+
+
+ansible_facts.net_interfaces.GigabitEthernet1.mtu >= 1400 - does not work 

@@ -1,0 +1,45 @@
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+
+    vars :
+      dict :
+        dict_key : dictionary value
+
+    tasks :
+      - name : Test Dictionary key value 
+        debug :
+          msg : result is {{ dict }}
+        tags : prod
+
+      - name : Test Dictionary key value with dot notation  
+        debug :
+          msg : result is {{ dict.dict_key }}
+      
+      
+      - name : Test Dictionary key value with python notation 
+        debug :
+          msg : result is {{ dict['dict_key'] }}
+        tags : mytag1
+
+      - name  : Run Show version on Remote Devices 
+        ios_command :
+          commands : show version
+        tags : mytag1
+       
+      - name : run show version and check to see if output contains IOS
+        ios_command :
+          commands : show version 
+          wait_for : result[0] contains IOS
+        tags : mytag2
+
+      - name : run multiple commands on remote nodes 
+        ios_command :
+          commands :
+            - show version 
+            - show interfaces
+        register : results 
+
+
+...

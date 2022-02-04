@@ -1,0 +1,19 @@
+---
+  -
+    hosts : iosxe
+    gather_facts : false
+    connection: local
+    tasks:
+
+      # - name: Get facts
+      #   ios_facts:
+      #     gather_subset: all
+
+      - debug: msg="Serial Number is {{ myserial }} {{ another_val }}"
+
+...
+
+
+#ansible-playbook other0.yml --extra-vars "myserial=333 another_val=999"
+ 
+

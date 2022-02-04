@@ -1,0 +1,15 @@
+# Delete cron job
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    tasks :
+      - name : "ensure a job that runs at specified time (morning 5 and evening 5 )"
+        cron :
+          name : Job to clean 
+          state : absent 
+       
+          
+...

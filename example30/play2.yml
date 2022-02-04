@@ -1,0 +1,15 @@
+---
+   
+ -  hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+
+    tasks :
+      - name : Play2 - Task 1
+        debug :
+          msg : Play2 - Task 1
+
+      - import_tasks : play2_task2.yml
+
+...
+
+    

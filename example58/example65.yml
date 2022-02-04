@@ -1,0 +1,26 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    tasks : 
+      - name : read from CSV
+        read_csv :
+          path : csv_file3.csv
+          key : hostname
+        register : dms
+
+      - debug : 
+          var : dms.dict
+
+      - debug :
+          msg : "{{ item.key }} :
+                 {{ item.value.hostname }},
+                 {{ item.value.partition }},
+                 {{ item.value.ip }}"
+                 
+        loop : "{{dms.dict | dict2items }}"
+
+...

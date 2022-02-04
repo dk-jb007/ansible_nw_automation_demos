@@ -1,0 +1,34 @@
+---
+ -
+    hosts : iosxe
+    gather_facts : false
+    tasks :
+      - name : Create Users
+        user :
+          name : "{{ item.key }}"
+          comment : "{{ item.value.full_name }}"
+        with_dict :
+          rao :
+            full_name : Vishwanath Rao
+
+
+      - name : create Authorized Key 
+        authorized_key :
+          user : rao
+          key : "{{ item }}"
+        with_file :
+          - /home/vishymails/.ssh/id_rsa.pub
+          - custom_key.pub
+
+      - name : create Sequential directories 
+        file :
+          dest : "/home/rao/sequence_{{ item }}"
+          state : directory
+        with_sequence : start=0 end=100 stride=10
+
+      - name : create Sequential directories 2
+        file :
+          dest : "{{ item }}"
+          state : directory
+        with_sequence : start=0 end=100 stride=10 format=/home/rao/sequence_%d
+...

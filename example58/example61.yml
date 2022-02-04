@@ -1,0 +1,21 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    vars : 
+      landscape_list : ["cmdb:app1 lanscape", "cmdb:app2 (ex app3) landscape", "cmdb:app4 landscape"]
+
+    tasks : 
+      - debug : 
+          var : landscape_list
+
+      - set_fact : 
+          land_key : 'app2 \(ex app3\)'
+
+      - debug :
+          msg : "{{ landscape_list | select('search', land_key) | list }}"
+
+...

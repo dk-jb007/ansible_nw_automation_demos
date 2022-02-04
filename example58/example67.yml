@@ -1,0 +1,25 @@
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : false
+    connection : local
+    
+    tasks :
+      - name : schedule a command to run in 20 mins 
+        at :
+           command : df -h > tmp/diskspace
+           count : 20
+           units : minutes
+
+
+      - name : Compress directory /var/log in to backup.zip
+        archive :
+          path : /var/log
+          dest : /home/backup.tar.gz
+          owner : root
+          group : root
+          format : gz
+
+          
+...

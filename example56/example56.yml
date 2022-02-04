@@ -1,0 +1,16 @@
+# Roles example
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : true
+    connection : local
+
+    roles :
+      - oraclerole
+      - microsoftrole
+      - ibmrole
+      
+
+
+...

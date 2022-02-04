@@ -1,0 +1,28 @@
+# Jinja2 template example 1 - inline templates
+
+---
+  -
+    hosts : sandbox-iosxe-latest-1.cisco.com
+    gather_facts : true
+    connection : local
+
+    vars : 
+      users : [user1, user2, user3, user4]
+      program_owner : Dr.Rao
+
+    tasks :
+      - template :
+          src : example51.j2
+          dest : /etc/motd
+          owner : root
+          group : root
+          mode : 0644
+
+            
+       
+...
+
+
+
+
+          

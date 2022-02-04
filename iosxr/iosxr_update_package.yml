@@ -1,0 +1,20 @@
+---
+- hosts: ss-xr
+  connection: local
+  gather_facts: no
+
+  vars:
+    smu_name: 'xrv9k-mpls-2.0.0.1-r60204I.CSCxr33333'
+
+  tasks:
+  - name: update SMU package
+    iosxr_install_package:
+      host: '{{ ansible_host }}'
+      username: '{{ ansible_ssh_user }}'
+      password: '{{ ansible_ssh_pass }}'
+      #pkgpath: 'https://aermongk-dev'
+      pkgpath: 'tftp://192.168.1.1/'
+      pkgname: '{{ smu_name }}'
+      state: updated
+    register: output
+  - debug: var=output.stdout_lines
